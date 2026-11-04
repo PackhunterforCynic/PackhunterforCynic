@@ -33,3 +33,4 @@ with open('assets/profile/cyber_wolf_vector.svg', 'w', encoding='utf-8') as f:
     f.write(svg_doc)
 
 print('Saved assets/profile/cyber_wolf_vector.svg')
+

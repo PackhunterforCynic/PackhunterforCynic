@@ -4,3 +4,7 @@ preview.html
 Cyber Wolf AI Tech Avatar.png
 __pycache__/
 *.pyc
+check_*.png
+scratch_*.png
+fixed_render.png
+test_svg_render.png

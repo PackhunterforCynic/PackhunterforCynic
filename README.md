@@ -1,55 +1,55 @@
 <div align="center">
 
 <!-- ======================================================== -->
-<!-- 1. FULL-SCREEN WELCOME POP-UP (100% Pure Vector SVG)     -->
+<!-- 1. FULL-SCREEN WELCOME POP-UP (100% Matching Cyber Wolf)  -->
 <!-- ======================================================== -->
 <a href="https://robinsonj.vercel.app" target="_blank" title="Click to launch Robinson's Full-Screen Interactive Workstation &amp; Portfolio">
-  <img src="assets/welcome_popup.svg?v=5.0" alt="Robinson J. (PackhunterforCynic) Pure Vector Cyberpunk Workstation Full-Screen Welcome Modal" width="100%" />
+  <img src="assets/welcome_popup.svg?v=5.1" alt="Robinson J. (PackhunterforCynic) Cyberpunk Workstation Welcome Modal" width="100%" />
 </a>
 
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- 2. QUICK ACCESS HUD DOCK (Pure Vector Navigation Bar)     -->
+<!-- 2. QUICK ACCESS HUD DOCK (Matching Cyberpunk Navigation)  -->
 <!-- ======================================================== -->
-<img src="assets/nav_dock.svg?v=5.0" alt="Packhunter-OS Navigation Dock" width="100%" />
+<img src="assets/nav_dock.svg?v=5.1" alt="Packhunter-OS Navigation Dock" width="100%" />
 
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- 3. FLAGSHIP PRODUCTION ENGINES (Pure Vector Showcases)   -->
+<!-- 3. FLAGSHIP PRODUCTION ENGINES (Unified Showcase Cards)  -->
 <!-- ======================================================== -->
 
 <!-- Module 01 & 02: Real-Time WebSockets/WebRTC & Deterministic P2P Arena -->
 <a href="https://musica-apvs.vercel.app" target="_blank" title="Explore Musica &amp; Ben 10 Production Engines">
-  <img src="assets/showcase_musica_game.svg?v=5.0" alt="Musica Zero-DB Audio Core &amp; Ben 10 Alien Battle Arena" width="100%" />
+  <img src="assets/showcase_musica_game.svg?v=5.1" alt="Musica Zero-DB Audio Core &amp; Ben 10 Alien Battle Arena" width="100%" />
 </a>
 
 <br/><br/>
 
 <!-- Module 03 & 04: AI Vision Pathology & Computer Vision Optics -->
 <a href="https://robinsonj.vercel.app" target="_blank" title="Explore PlantSense AI &amp; CAMX Digital Camera Lab">
-  <img src="assets/showcase_ai_camx.svg?v=5.0" alt="PlantSense AI Botanical Vision &amp; CAMX Optics Simulator" width="100%" />
+  <img src="assets/showcase_ai_camx.svg?v=5.1" alt="PlantSense AI Botanical Vision &amp; CAMX Optics Simulator" width="100%" />
 </a>
 
 <br/><br/>
 
 <!-- Module 05 & 06: Cinematic Multimedia & Lighthouse 99 Production -->
 <a href="https://hse-indol.vercel.app" target="_blank" title="Explore Havilah Studio &amp; HSE Media Production Suite">
-  <img src="assets/showcase_havilah_hse.svg?v=5.0" alt="Havilah Studio Cinematic Engine &amp; HSE Media Performance Suite" width="100%" />
+  <img src="assets/showcase_havilah_hse.svg?v=5.1" alt="Havilah Studio Cinematic Engine &amp; HSE Media Performance Suite" width="100%" />
 </a>
 
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- 4. CORE ENGINEERING ARSENAL & SKILL MATRIX (Pure Vector) -->
+<!-- 4. CORE ENGINEERING ARSENAL & SKILL MATRIX (Full Vector) -->
 <!-- ======================================================== -->
-<img src="assets/tech_arsenal.svg?v=5.0" alt="Robinson J. Core Engineering Arsenal &amp; Technical Capabilities" width="100%" />
+<img src="assets/tech_arsenal.svg?v=5.1" alt="Robinson J. Core Engineering Arsenal &amp; Technical Capabilities" width="100%" />
 
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- 5. LIVE GITHUB CONTRIBUTION SNAKE ANIMATION (Pure Vector)-->
+<!-- 5. LIVE GITHUB CONTRIBUTION SNAKE ANIMATION              -->
 <!-- ======================================================== -->
 <a href="https://github.com/PackhunterforCynic">
   <img src="https://raw.githubusercontent.com/PackhunterforCynic/PackhunterforCynic/output/github-contribution-grid-snake-dark.svg" alt="PackhunterforCynic Live GitHub Contribution Snake" width="100%" />
@@ -65,20 +65,20 @@
 <br/><br/>
 
 <a href="https://github.com/PackhunterforCynic">
-  <img src="https://komarev.com/ghpvc/?username=PackhunterforCynic&style=for-the-badge&color=39F59A&labelColor=0B1517&label=PROFILE%20TELEMETRY%20VIEWS" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=PackhunterforCynic&style=for-the-badge&color=00F2FE&labelColor=061824&label=PROFILE%20TELEMETRY%20VIEWS" alt="Profile Views" />
 </a>
 <a href="https://github.com/PackhunterforCynic">
-  <img src="https://img.shields.io/badge/System%20Status-200%20OK%20%E2%80%A2%20All%20Services%20Active-0B1517?style=for-the-badge&logo=statuspal&logoColor=39F59A&labelColor=050B0D" alt="System Status" />
+  <img src="https://img.shields.io/badge/System%20Status-200%20OK%20%E2%80%A2%20All%20Services%20Active-061824?style=for-the-badge&logo=statuspal&logoColor=00F2FE&labelColor=030C12" alt="System Status" />
 </a>
 <a href="https://github.com/PackhunterforCynic">
-  <img src="https://img.shields.io/badge/Architecture-100%25%20Pure%20Vector%20SVG-0B1517?style=for-the-badge&logo=svg&logoColor=20D9D2&labelColor=050B0D" alt="Pure Vector SVG" />
+  <img src="https://img.shields.io/badge/Identity-Robinson%20J.%20(PackhunterforCynic)-061824?style=for-the-badge&logo=github&logoColor=39F59A&labelColor=030C12" alt="Identity" />
 </a>
 
 <br/><br/>
 
 <!-- Live GitHub Streak Card (Matched Cyberpunk Dark Palette) -->
 <a href="https://github.com/PackhunterforCynic">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PackhunterforCynic&theme=dark&background=0B1517&stroke=174D43&ring=39F59A&fire=39F59A&currStreakLabel=39F59A&sideLabels=9BAEAA&dates=9BAEAA" alt="PackhunterforCynic Live GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PackhunterforCynic&theme=dark&background=061824&stroke=12444C&ring=00F2FE&fire=00F2FE&currStreakLabel=00F2FE&sideLabels=9BAEAA&dates=9BAEAA" alt="PackhunterforCynic Live GitHub Streak" />
 </a>
 
 </div>
@@ -150,14 +150,14 @@ cd game && npm install && npm run dev
 <div align="center">
 
 <!-- Quick Verified Connect Badges -->
-<a href="https://github.com/PackhunterforCynic"><img src="https://img.shields.io/badge/GitHub-PackhunterforCynic-0B1517?style=for-the-badge&logo=github&logoColor=39F59A&labelColor=050B0D" alt="GitHub" /></a>
-<a href="https://linkedin.com/in/robinson-mj"><img src="https://img.shields.io/badge/LinkedIn-Robinson_J.-0B1517?style=for-the-badge&logo=linkedin&logoColor=20D9D2&labelColor=050B0D" alt="LinkedIn" /></a>
-<a href="https://robinsonj.vercel.app"><img src="https://img.shields.io/badge/Portfolio-robinsonj.vercel.app-0B1517?style=for-the-badge&logo=vercel&logoColor=39F59A&labelColor=050B0D" alt="Portfolio" /></a>
-<a href="mailto:robinson30122000@gmail.com"><img src="https://img.shields.io/badge/Email-robinson30122000%40gmail.com-0B1517?style=for-the-badge&logo=gmail&logoColor=20D9D2&labelColor=050B0D" alt="Email" /></a>
+<a href="https://github.com/PackhunterforCynic"><img src="https://img.shields.io/badge/GitHub-PackhunterforCynic-061824?style=for-the-badge&logo=github&logoColor=00F2FE&labelColor=030C12" alt="GitHub" /></a>
+<a href="https://linkedin.com/in/robinson-mj"><img src="https://img.shields.io/badge/LinkedIn-Robinson_J.-061824?style=for-the-badge&logo=linkedin&logoColor=39F59A&labelColor=030C12" alt="LinkedIn" /></a>
+<a href="https://robinsonj.vercel.app"><img src="https://img.shields.io/badge/Portfolio-robinsonj.vercel.app-061824?style=for-the-badge&logo=vercel&logoColor=00F2FE&labelColor=030C12" alt="Portfolio" /></a>
+<a href="mailto:robinson30122000@gmail.com"><img src="https://img.shields.io/badge/Email-robinson30122000%40gmail.com-061824?style=for-the-badge&logo=gmail&logoColor=39F59A&labelColor=030C12" alt="Email" /></a>
 
 <br/><br/>
 
-<!-- 100% Pure Vector Cyberpunk HUD Footer -->
-<img src="assets/footer_uplink.svg?v=5.0" alt="Robinson J. Developer Uplink &amp; Footer" width="100%" />
+<!-- Matching Cyberpunk HUD Footer -->
+<img src="assets/footer_uplink.svg?v=5.1" alt="Robinson J. Developer Uplink &amp; Footer" width="100%" />
 
 </div>

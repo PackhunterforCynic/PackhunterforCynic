@@ -128,3 +128,4 @@ def generate_cyber_wolf_svg(cx=200, cy=200, scale=1.0):
 if __name__ == '__main__':
     result = generate_cyber_wolf_svg()
     print(f"Generated {len(result.splitlines())} lines of pure vector Cyber Wolf geometry!")
+

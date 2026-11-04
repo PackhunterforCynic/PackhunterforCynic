@@ -475,3 +475,4 @@ def create_pure_vector_welcome_popup():
 
 if __name__ == '__main__':
     create_pure_vector_welcome_popup()
+
