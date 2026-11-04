@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg-learn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1517" />
+      <stop offset="100%" stop-color="#070E10" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .title { font-size: 13.5px; font-weight: 700; fill: #F4F7F6; }
+    .item-title { font-size: 10px; font-weight: 600; fill: #E1E8E6; text-anchor: middle; }
+    .item-sub { font-size: 8.5px; fill: #9BAEAA; text-anchor: middle; }
+  </style>
+
+  <rect x="1" y="1" width="338" height="138" rx="10" fill="url(#card-bg-learn)" stroke="#174D43" stroke-width="1.2" />
+
+  <!-- Header -->
+  <g transform="translate(16, 14)">
+    <!-- Radar / Target Icon -->
+    <circle cx="7" cy="8" r="7" stroke="#39F59A" stroke-width="1.2" fill="none" />
+    <circle cx="7" cy="8" r="3" stroke="#20D9D2" stroke-width="1" fill="none" />
+    <circle cx="7" cy="8" r="1" fill="#39F59A" />
+    <text x="22" y="13" class="font-sans title">Currently Learning</text>
+  </g>
+
+  <!-- 4 Items Row -->
+  <g transform="translate(15, 48)">
+    <!-- Item 1: Distributed Systems -->
+    <g transform="translate(30, 0)">
+      <circle cx="0" cy="16" r="18" fill="#0D2622" stroke="#174D43" stroke-width="1" />
+      <!-- Star / Cluster Icon -->
+      <path d="M 0 6 L 3 13 L 10 16 L 3 19 L 0 26 L -3 19 L -10 16 L -3 13 Z" fill="#39F59A" />
+      <text x="0" y="48" class="font-sans item-title">Distributed</text>
+      <text x="0" y="60" class="font-sans item-sub">Systems</text>
+    </g>
+
+    <!-- Item 2: GenAI & RAG -->
+    <g transform="translate(108, 0)">
+      <circle cx="0" cy="16" r="18" fill="#0D2622" stroke="#174D43" stroke-width="1" />
+      <!-- Brain / Sparkle Icon -->
+      <circle cx="0" cy="16" r="8" stroke="#20D9D2" stroke-width="1.2" fill="none" />
+      <circle cx="-3" cy="14" r="1.5" fill="#39F59A" />
+      <circle cx="3" cy="14" r="1.5" fill="#39F59A" />
+      <path d="M -4 18 Q 0 21 4 18" stroke="#39F59A" stroke-width="1" fill="none" />
+      <text x="0" y="48" class="font-sans item-title">GenAI</text>
+      <text x="0" y="60" class="font-sans item-sub">&amp; RAG</text>
+    </g>
+
+    <!-- Item 3: Cloud AWS -->
+    <g transform="translate(186, 0)">
+      <circle cx="0" cy="16" r="18" fill="#0D2622" stroke="#174D43" stroke-width="1" />
+      <!-- Cloud Icon -->
+      <path d="M -6 19 C -8 19 -10 17 -10 15 C -10 13 -8 11 -6 11 C -6 8 -3 6 0 6 C 4 6 7 8 7 11 C 9 11 11 13 11 15 C 11 17 9 19 7 19 Z" stroke="#39F59A" stroke-width="1.2" fill="none" />
+      <text x="0" y="48" class="font-sans item-title">Cloud</text>
+      <text x="0" y="60" class="font-sans item-sub">(AWS)</text>
+    </g>
+
+    <!-- Item 4: System Design -->
+    <g transform="translate(264, 0)">
+      <circle cx="0" cy="16" r="18" fill="#0D2622" stroke="#174D43" stroke-width="1" />
+      <!-- Gear / Architecture Icon -->
+      <circle cx="0" cy="16" r="4" stroke="#20D9D2" stroke-width="1.2" fill="none" />
+      <path d="M 0 8 L 0 10 M 0 22 L 0 24 M -8 16 L -6 16 M 6 16 L 8 16 M -5 11 L -4 12 M 4 20 L 5 21 M -5 21 L -4 20 M 4 12 L 5 11" stroke="#39F59A" stroke-width="1.2" />
+      <text x="0" y="48" class="font-sans item-title">System</text>
+      <text x="0" y="60" class="font-sans item-sub">Design</text>
+    </g>
+  </g>
+</svg>
+

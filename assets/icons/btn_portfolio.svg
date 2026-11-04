@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54" width="100%" height="100%">
+  <rect x="1" y="1" width="52" height="52" rx="10" fill="#0D211D" stroke="#174D43" stroke-width="1.2" />
+  <g transform="translate(17, 17)">
+    <!-- External Link Arrow -->
+    <path d="M 5 15 L 15 5 M 7 5 L 15 5 L 15 13" stroke="#39F59A" stroke-width="2.2" fill="none" stroke-linecap="round" />
+  </g>
+</svg>
+

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 105" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1517" />
+      <stop offset="100%" stop-color="#081012" />
+    </linearGradient>
+    <linearGradient id="thumb-grad-cam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081E24" />
+      <stop offset="100%" stop-color="#020C10" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'Fira Code', 'Courier New', monospace; }
+    .title { font-size: 13px; font-weight: 700; fill: #39F59A; }
+    .desc { font-size: 10px; fill: #9BAEAA; line-height: 1.35; }
+    .tag-text { font-size: 8.5px; font-weight: 600; fill: #39F59A; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="268" height="103" rx="8" fill="url(#card-bg)" stroke="#174D43" stroke-width="1.2" />
+
+  <!-- Left: Thumbnail Box -->
+  <g transform="translate(10, 14)">
+    <rect x="0" y="0" width="95" height="76" rx="6" fill="url(#thumb-grad-cam)" stroke="#174D43" stroke-width="0.8" />
+    <!-- Camera Lens / Iris Diaphragm -->
+    <circle cx="48" cy="38" r="22" stroke="#20D9D2" stroke-width="1.2" fill="none" opacity="0.8" />
+    <circle cx="48" cy="38" r="13" stroke="#39F59A" stroke-width="1.5" fill="#0B201A" />
+    <!-- Aperture Blades -->
+    <path d="M 40 28 L 52 32 M 56 34 L 54 46 M 48 48 L 38 42" stroke="#39F59A" stroke-width="1" />
+    <!-- Crosshairs -->
+    <line x1="48" y1="20" x2="48" y2="24" stroke="#20D9D2" stroke-width="1.2" />
+    <line x1="48" y1="52" x2="48" y2="56" stroke="#20D9D2" stroke-width="1.2" />
+    <line x1="30" y1="38" x2="34" y2="38" stroke="#20D9D2" stroke-width="1.2" />
+    <line x1="62" y1="38" x2="66" y2="38" stroke="#20D9D2" stroke-width="1.2" />
+  </g>
+
+  <!-- Right: Content -->
+  <g transform="translate(114, 18)">
+    <text x="0" y="11" class="font-sans title">Digital Camera Lab</text>
+    <path d="M 124 3 L 132 3 M 132 3 L 132 11 M 132 3 L 126 9" stroke="#39F59A" stroke-width="1.2" fill="none" stroke-linecap="round" />
+
+    <text x="0" y="27" class="font-sans desc">Hands-free optics simulator with</text>
+    <text x="0" y="40" class="font-sans desc">EV100, landmarks &amp; voice.</text>
+
+    <!-- Tags -->
+    <g transform="translate(0, 52)">
+      <rect x="0" y="0" width="46" height="15" rx="3" fill="#0D2420" stroke="#174D43" stroke-width="0.7" />
+      <text x="23" y="10.5" text-anchor="middle" class="font-mono tag-text">Vision ML</text>
+
+      <rect x="50" y="0" width="44" height="15" rx="3" fill="#0D2420" stroke="#174D43" stroke-width="0.7" />
+      <text x="72" y="10.5" text-anchor="middle" class="font-mono tag-text">Optics</text>
+
+      <rect x="98" y="0" width="48" height="15" rx="3" fill="#0D2420" stroke="#174D43" stroke-width="0.7" />
+      <text x="122" y="10.5" text-anchor="middle" class="font-mono tag-text">Speech API</text>
+    </g>
+  </g>
+</svg>
+

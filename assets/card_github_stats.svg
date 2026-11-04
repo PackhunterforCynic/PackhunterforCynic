@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 230" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg-stats" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1517" />
+      <stop offset="100%" stop-color="#070E10" />
+    </linearGradient>
+    <linearGradient id="score-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#39F59A" />
+      <stop offset="100%" stop-color="#20D9D2" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'Fira Code', 'Courier New', monospace; }
+    .card-title { font-size: 15px; font-weight: 700; fill: #F4F7F6; }
+    .stat-num { font-size: 14px; font-weight: 700; fill: #F4F7F6; }
+    .stat-lbl { font-size: 9px; fill: #9BAEAA; }
+    .lang-name { font-size: 10px; font-weight: 600; fill: #C3D2CF; }
+    .lang-pct { font-size: 9.5px; fill: #9BAEAA; }
+  </style>
+
+  <rect x="1" y="1" width="358" height="228" rx="10" fill="url(#card-bg-stats)" stroke="#174D43" stroke-width="1.2" />
+
+  <!-- Header -->
+  <g transform="translate(18, 16)">
+    <!-- Bar Chart Icon -->
+    <rect x="0" y="8" width="3" height="8" fill="#39F59A" />
+    <rect x="5" y="4" width="3" height="12" fill="#39F59A" />
+    <rect x="10" y="1" width="3" height="15" fill="#20D9D2" />
+    <text x="22" y="14" class="font-sans card-title">GitHub Stats</text>
+  </g>
+
+  <!-- Top Stats Row (4 Mini Counters) -->
+  <g transform="translate(18, 44)">
+    <!-- Stat 1: Commits / Activity -->
+    <g transform="translate(0, 0)">
+      <circle cx="12" cy="12" r="10" fill="#0D2622" stroke="#174D43" stroke-width="0.8" />
+      <path d="M 12 7 C 9.2 7 7 9.2 7 12 C 7 14.5 8.7 16.5 11 16.9 L 11 15.5 C 9.5 15.2 9.5 14 9.5 14 C 9.2 13.2 8.7 13 8.7 13 C 8 12.5 8.7 12.5 8.7 12.5 C 9.5 12.6 9.9 13.3 9.9 13.3 C 10.6 14.5 11.7 14.1 12 13.9 C 12.1 13.4 12.3 13.1 12.5 12.9 C 10.5 12.7 8.5 12 8.5 9 C 8.5 8.1 8.8 7.4 9.4 6.8 C 9.3 6.6 9 5.8 9.5 4.7 C 9.5 4.7 10.2 4.5 12 5.6 C 12.7 5.4 13.4 5.3 14.1 5.3 C 14.8 5.3 15.5 5.4 16.2 5.6 C 17.7 4.5 18.4 4.7 18.4 4.7 C 18.9 5.8 18.6 6.6 18.5 6.8 C 19.1 7.4 19.4 8.1 19.4 9 C 19.4 12 17.4 12.7 15.4 12.9 C 15.7 13.2 15.9 13.7 15.9 14.4 L 15.9 16.9 C 18.2 16.5 19.9 14.5 19.9 12 C 19.9 9.2 17.7 7 14.9 7" fill="#39F59A" />
+      <text x="32" y="11" class="font-sans stat-num">250+</text>
+      <text x="32" y="22" class="font-sans stat-lbl">Contributions</text>
+    </g>
+
+    <!-- Stat 2: Streak -->
+    <g transform="translate(85, 0)">
+      <circle cx="12" cy="12" r="10" fill="#0D2622" stroke="#174D43" stroke-width="0.8" />
+      <path d="M 12 6 C 12 6 9.5 9.5 9.5 12 C 9.5 13.4 10.6 14.5 12 14.5 C 13.4 14.5 14.5 13.4 14.5 12 C 14.5 9.5 12 6 12 6 Z" fill="#39F59A" />
+      <text x="32" y="11" class="font-sans stat-num">24</text>
+      <text x="32" y="22" class="font-sans stat-lbl">Day Streak</text>
+    </g>
+
+    <!-- Stat 3: Repos -->
+    <g transform="translate(165, 0)">
+      <circle cx="12" cy="12" r="10" fill="#0D2622" stroke="#174D43" stroke-width="0.8" />
+      <!-- Folder Icon -->
+      <path d="M 7 9 L 10 9 L 11.5 10.5 L 17 10.5 L 17 15 L 7 15 Z" fill="#20D9D2" />
+      <text x="32" y="11" class="font-sans stat-num">8</text>
+      <text x="32" y="22" class="font-sans stat-lbl">Repositories</text>
+    </g>
+
+    <!-- Stat 4: Production -->
+    <g transform="translate(245, 0)">
+      <circle cx="12" cy="12" r="10" fill="#0D2622" stroke="#174D43" stroke-width="0.8" />
+      <!-- Globe / Cloud -->
+      <circle cx="12" cy="12" r="5" stroke="#39F59A" stroke-width="1.2" fill="none" />
+      <text x="32" y="11" class="font-sans stat-num">4</text>
+      <text x="32" y="22" class="font-sans stat-lbl">Live Vercel</text>
+    </g>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="18" y1="80" x2="342" y2="80" stroke="#174D43" stroke-width="0.8" opacity="0.6" />
+
+  <!-- Lower Section: Left (Languages Bars) & Right (Profile Score A+) -->
+  <!-- Left: Most Used Languages -->
+  <g transform="translate(18, 96)">
+    <text x="0" y="11" class="font-sans" font-size="11" font-weight="700" fill="#F4F7F6">Most Used Languages</text>
+
+    <!-- Lang 1: TypeScript -->
+    <g transform="translate(0, 22)">
+      <circle cx="4" cy="5" r="3.5" fill="#3178C6" />
+      <text x="14" y="8" class="font-sans lang-name">TypeScript</text>
+      <text x="175" y="8" text-anchor="end" class="font-mono lang-pct">46.8%</text>
+      <!-- Progress Track -->
+      <rect x="0" y="13" width="175" height="4" rx="2" fill="#13272C" />
+      <rect x="0" y="13" width="82" height="4" rx="2" fill="#3178C6" />
+    </g>
+
+    <!-- Lang 2: JavaScript -->
+    <g transform="translate(0, 44)">
+      <circle cx="4" cy="5" r="3.5" fill="#F7DF1E" />
+      <text x="14" y="8" class="font-sans lang-name">JavaScript</text>
+      <text x="175" y="8" text-anchor="end" class="font-mono lang-pct">23.4%</text>
+      <rect x="0" y="13" width="175" height="4" rx="2" fill="#13272C" />
+      <rect x="0" y="13" width="41" height="4" rx="2" fill="#F7DF1E" />
+    </g>
+
+    <!-- Lang 3: Python -->
+    <g transform="translate(0, 66)">
+      <circle cx="4" cy="5" r="3.5" fill="#38BDF8" />
+      <text x="14" y="8" class="font-sans lang-name">Python</text>
+      <text x="175" y="8" text-anchor="end" class="font-mono lang-pct">16.2%</text>
+      <rect x="0" y="13" width="175" height="4" rx="2" fill="#13272C" />
+      <rect x="0" y="13" width="28" height="4" rx="2" fill="#38BDF8" />
+    </g>
+
+    <!-- Lang 4: HTML & CSS -->
+    <g transform="translate(0, 88)">
+      <circle cx="4" cy="5" r="3.5" fill="#E34F26" />
+      <text x="14" y="8" class="font-sans lang-name">HTML/CSS</text>
+      <text x="175" y="8" text-anchor="end" class="font-mono lang-pct">13.6%</text>
+      <rect x="0" y="13" width="175" height="4" rx="2" fill="#13272C" />
+      <rect x="0" y="13" width="24" height="4" rx="2" fill="#E34F26" />
+    </g>
+  </g>
+
+  <!-- Right: Profile Score A+ -->
+  <g transform="translate(262, 106)">
+    <!-- Outer Glow Circle -->
+    <circle cx="36" cy="38" r="32" fill="none" stroke="#174D43" stroke-width="4.5" />
+    <circle cx="36" cy="38" r="32" fill="none" stroke="url(#score-ring)" stroke-width="4.5" stroke-dasharray="180 30" stroke-linecap="round" />
+    <!-- Score Text -->
+    <text x="36" y="46" text-anchor="middle" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#39F59A">A+</text>
+    <!-- Label -->
+    <text x="36" y="84" text-anchor="middle" class="font-sans" font-size="10" font-weight="600" fill="#F4F7F6">GitHub</text>
+    <text x="36" y="96" text-anchor="middle" class="font-sans" font-size="9" fill="#9BAEAA">Profile Score</text>
+  </g>
+</svg>
+

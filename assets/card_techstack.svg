@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 285" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg-tech" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1517" />
+      <stop offset="100%" stop-color="#070E10" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'Fira Code', 'Courier New', monospace; }
+    .card-title { font-size: 15px; font-weight: 700; fill: #F4F7F6; }
+    .cat-label { font-size: 11px; font-weight: 600; fill: #9BAEAA; }
+    .badge-text { font-size: 9px; font-weight: 600; fill: #E1E8E6; }
+  </style>
+
+  <rect x="1" y="1" width="358" height="283" rx="10" fill="url(#card-bg-tech)" stroke="#174D43" stroke-width="1.2" />
+
+  <!-- Header -->
+  <g transform="translate(18, 16)">
+    <!-- Circuit / Stack Icon -->
+    <rect x="0" y="2" width="16" height="14" rx="2" stroke="#39F59A" stroke-width="1.3" fill="none" />
+    <line x1="4" y1="9" x2="12" y2="9" stroke="#39F59A" stroke-width="1.3" />
+    <circle cx="8" cy="9" r="1.5" fill="#20D9D2" />
+    <text x="24" y="14" class="font-sans card-title">Tech Stack</text>
+  </g>
+
+  <!-- Row 1: Languages -->
+  <g transform="translate(18, 48)">
+    <text x="0" y="13" class="font-sans cat-label">Languages</text>
+    <g transform="translate(100, 0)">
+      <!-- Python -->
+      <rect x="0" y="0" width="46" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="23" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#38BDF8">Python</text>
+      <!-- TS -->
+      <rect x="50" y="0" width="30" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="65" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#38BDF8">TS</text>
+      <!-- JS -->
+      <rect x="84" y="0" width="28" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="98" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#FACC15">JS</text>
+      <!-- Java -->
+      <rect x="116" y="0" width="38" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="135" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#FB923C">Java</text>
+      <!-- PHP -->
+      <rect x="158" y="0" width="34" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="175" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#A78BFA">PHP</text>
+      <!-- SQL -->
+      <rect x="196" y="0" width="34" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="213" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#34D399">SQL</text>
+    </g>
+  </g>
+
+  <!-- Row 2: Web & Backend -->
+  <g transform="translate(18, 88)">
+    <text x="0" y="13" class="font-sans cat-label">Web &amp; Backend</text>
+    <g transform="translate(100, 0)">
+      <!-- React -->
+      <rect x="0" y="0" width="45" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="22.5" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#67E8F9">React</text>
+      <!-- Next.js -->
+      <rect x="49" y="0" width="46" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="72" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#F4F7F6">Next.js</text>
+      <!-- Node -->
+      <rect x="99" y="0" width="45" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="121.5" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#4ADE80">Node</text>
+      <!-- FastAPI -->
+      <rect x="148" y="0" width="48" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="172" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#2DD4BF">FastAPI</text>
+      <!-- Tailwind -->
+      <rect x="200" y="0" width="34" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="217" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#38BDF8">CSS4</text>
+    </g>
+  </g>
+
+  <!-- Row 3: AI & Vision -->
+  <g transform="translate(18, 128)">
+    <text x="0" y="13" class="font-sans cat-label">AI / ML &amp; Vision</text>
+    <g transform="translate(100, 0)">
+      <!-- Gemini Vision -->
+      <rect x="0" y="0" width="80" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="40" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#C084FC">Gemini Vision</text>
+      <!-- ChromaDB -->
+      <rect x="84" y="0" width="66" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="117" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#FB7185">ChromaDB</text>
+      <!-- scikit -->
+      <rect x="154" y="0" width="76" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="192" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#FDBA74">scikit-learn</text>
+    </g>
+  </g>
+
+  <!-- Row 4: Real-Time & Audio -->
+  <g transform="translate(18, 168)">
+    <text x="0" y="13" class="font-sans cat-label">Real-Time &amp; Media</text>
+    <g transform="translate(100, 0)">
+      <!-- WebRTC -->
+      <rect x="0" y="0" width="56" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="28" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#34D399">WebRTC</text>
+      <!-- Socket.IO -->
+      <rect x="60" y="0" width="60" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="90" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#20D9D2">Socket.IO</text>
+      <!-- Phaser -->
+      <rect x="124" y="0" width="52" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="150" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#E879F9">Phaser 4</text>
+      <!-- Web Audio -->
+      <rect x="180" y="0" width="50" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="205" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#38BDF8">AudioAPI</text>
+    </g>
+  </g>
+
+  <!-- Row 5: Databases -->
+  <g transform="translate(18, 208)">
+    <text x="0" y="13" class="font-sans cat-label">Databases</text>
+    <g transform="translate(100, 0)">
+      <!-- MongoDB -->
+      <rect x="0" y="0" width="60" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="30" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#4ADE80">MongoDB</text>
+      <!-- SQLite -->
+      <rect x="64" y="0" width="48" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="88" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#38BDF8">SQLite</text>
+      <!-- MySQL -->
+      <rect x="116" y="0" width="48" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="140" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#F97316">MySQL</text>
+      <!-- RAG Store -->
+      <rect x="168" y="0" width="62" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="199" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#39F59A">VectorDB</text>
+    </g>
+  </g>
+
+  <!-- Row 6: Tools & Cloud -->
+  <g transform="translate(18, 248)">
+    <text x="0" y="13" class="font-sans cat-label">Tools &amp; DevOps</text>
+    <g transform="translate(100, 0)">
+      <!-- Docker -->
+      <rect x="0" y="0" width="50" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="25" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#38BDF8">Docker</text>
+      <!-- Git -->
+      <rect x="54" y="0" width="30" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="69" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#FB923C">Git</text>
+      <!-- Actions -->
+      <rect x="88" y="0" width="48" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="112" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#38BDF8">Actions</text>
+      <!-- Postman -->
+      <rect x="140" y="0" width="50" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="165" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#FB923C">Postman</text>
+      <!-- Bun -->
+      <rect x="194" y="0" width="36" height="18" rx="4" fill="#0E242B" stroke="#174D43" stroke-width="0.7" />
+      <text x="212" y="12.5" text-anchor="middle" class="font-mono badge-text" fill="#F4F7F6">Bun</text>
+    </g>
+  </g>
+</svg>
+

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1517" />
+      <stop offset="100%" stop-color="#070E10" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .title-text { font-size: 16px; font-weight: 700; fill: #F4F7F6; letter-spacing: 0.3px; }
+    .body-text { font-size: 12.5px; fill: #C3D2CF; line-height: 1.5; }
+    .bullet-bold { font-size: 12px; font-weight: 700; fill: #39F59A; }
+    .bullet-text { font-size: 12px; fill: #E1E8E6; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="558" height="178" rx="10" fill="url(#card-bg)" stroke="#174D43" stroke-width="1.2" />
+
+  <!-- Header with User Icon -->
+  <g transform="translate(18, 16)">
+    <circle cx="10" cy="8" r="6" stroke="#39F59A" stroke-width="1.5" fill="none" />
+    <path d="M 3 22 C 3 17 6.5 15 10 15 C 13.5 15 17 17 17 22" stroke="#39F59A" stroke-width="1.5" fill="none" />
+    <text x="28" y="18" class="font-sans title-text">About Me</text>
+  </g>
+
+  <!-- Bio Paragraph -->
+  <text x="18" y="58" class="font-sans body-text">
+    I'm a Computer Science postgraduate (MCA '25) who turns complex challenges into
+  </text>
+  <text x="18" y="76" class="font-sans body-text">
+    data-driven, real-time, and scalable solutions across full-stack, WebRTC, and AI systems.
+  </text>
+
+  <!-- Bullet 1: Building -->
+  <g transform="translate(18, 102)">
+    <circle cx="8" cy="4" r="6" fill="#0D2D24" stroke="#39F59A" stroke-width="1.2" />
+    <path d="M 5 4 L 7.5 6.5 L 11 2" stroke="#39F59A" stroke-width="1.2" fill="none" stroke-linecap="round" />
+    <text x="22" y="8" class="font-sans">
+      <tspan class="bullet-bold">Building:</tspan> <tspan class="bullet-text">Real-time WebRTC platforms, interactive 2D games, AI diagnostic suites</tspan>
+    </text>
+  </g>
+
+  <!-- Bullet 2: Exploring -->
+  <g transform="translate(18, 126)">
+    <circle cx="8" cy="4" r="6" fill="#0D2D24" stroke="#39F59A" stroke-width="1.2" />
+    <path d="M 5 4 L 7.5 6.5 L 11 2" stroke="#39F59A" stroke-width="1.2" fill="none" stroke-linecap="round" />
+    <text x="22" y="8" class="font-sans">
+      <tspan class="bullet-bold">Exploring:</tspan> <tspan class="bullet-text">Vector RAG retrieval (ChromaDB), distributed signaling, zero-DB stores</tspan>
+    </text>
+  </g>
+
+  <!-- Bullet 3: Goal -->
+  <g transform="translate(18, 150)">
+    <circle cx="8" cy="4" r="6" fill="#0D2D24" stroke="#39F59A" stroke-width="1.2" />
+    <path d="M 5 4 L 7.5 6.5 L 11 2" stroke="#39F59A" stroke-width="1.2" fill="none" stroke-linecap="round" />
+    <text x="22" y="8" class="font-sans">
+      <tspan class="bullet-bold">Goal:</tspan> <tspan class="bullet-text">To grow as a versatile engineer architecting resilient, scalable systems</tspan>
+    </text>
+  </g>
+</svg>
+

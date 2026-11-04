@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 105" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1517" />
+      <stop offset="100%" stop-color="#081012" />
+    </linearGradient>
+    <linearGradient id="thumb-grad-havilah" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141E1C" />
+      <stop offset="100%" stop-color="#050C0A" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'Fira Code', 'Courier New', monospace; }
+    .title { font-size: 13px; font-weight: 700; fill: #39F59A; }
+    .desc { font-size: 10px; fill: #9BAEAA; line-height: 1.35; }
+    .tag-text { font-size: 8.5px; font-weight: 600; fill: #39F59A; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="268" height="103" rx="8" fill="url(#card-bg)" stroke="#174D43" stroke-width="1.2" />
+
+  <!-- Left: Thumbnail Box -->
+  <g transform="translate(10, 14)">
+    <rect x="0" y="0" width="95" height="76" rx="6" fill="url(#thumb-grad-havilah)" stroke="#174D43" stroke-width="0.8" />
+    <!-- Film Reel / Clapperboard -->
+    <rect x="22" y="22" width="50" height="34" rx="3" stroke="#39F59A" stroke-width="1.2" fill="#0D2620" />
+    <polygon points="42,32 56,39 42,46" fill="#39F59A" />
+    <!-- Film Strip Perforations -->
+    <circle cx="28" cy="27" r="1.5" fill="#20D9D2" />
+    <circle cx="66" cy="27" r="1.5" fill="#20D9D2" />
+    <circle cx="28" cy="51" r="1.5" fill="#20D9D2" />
+    <circle cx="66" cy="51" r="1.5" fill="#20D9D2" />
+  </g>
+
+  <!-- Right: Content -->
+  <g transform="translate(114, 18)">
+    <text x="0" y="11" class="font-sans title">Havilah Studio</text>
+    <path d="M 124 3 L 132 3 M 132 3 L 132 11 M 132 3 L 126 9" stroke="#39F59A" stroke-width="1.2" fill="none" stroke-linecap="round" />
+
+    <text x="0" y="27" class="font-sans desc">Cinematic multimedia portfolio</text>
+    <text x="0" y="40" class="font-sans desc">with Bun runtime &amp; GSAP.</text>
+
+    <!-- Tags -->
+    <g transform="translate(0, 52)">
+      <rect x="0" y="0" width="46" height="15" rx="3" fill="#0D2420" stroke="#174D43" stroke-width="0.7" />
+      <text x="23" y="10.5" text-anchor="middle" class="font-mono tag-text">TypeScript</text>
+
+      <rect x="50" y="0" width="36" height="15" rx="3" fill="#0D2420" stroke="#174D43" stroke-width="0.7" />
+      <text x="68" y="10.5" text-anchor="middle" class="font-mono tag-text">Bun</text>
+
+      <rect x="90" y="0" width="38" height="15" rx="3" fill="#0D2420" stroke="#174D43" stroke-width="0.7" />
+      <text x="109" y="10.5" text-anchor="middle" class="font-mono tag-text">GSAP</text>
+    </g>
+  </g>
+</svg>
+

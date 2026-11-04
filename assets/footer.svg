@@ -1,46 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 110" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 90" width="100%" height="100%">
   <defs>
     <linearGradient id="footer-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#121820" />
-      <stop offset="100%" stop-color="#0A0D12" />
+      <stop offset="0%" stop-color="#0B1517" />
+      <stop offset="100%" stop-color="#050C0E" />
     </linearGradient>
-
-    <linearGradient id="accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#34D399" stop-opacity="0.1" />
-      <stop offset="30%" stop-color="#34D399" stop-opacity="0.9" />
-      <stop offset="70%" stop-color="#22D3EE" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.1" />
+    <linearGradient id="neon-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#39F59A" stop-opacity="0.1" />
+      <stop offset="25%" stop-color="#39F59A" stop-opacity="0.9" />
+      <stop offset="75%" stop-color="#20D9D2" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#20D9D2" stop-opacity="0.1" />
     </linearGradient>
   </defs>
 
   <style>
-    .font-mono { font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', Consolas, Menlo, monospace; }
-    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-    .footer-title { font-size: 13.5px; font-weight: 700; fill: #F0F6FC; letter-spacing: 1.5px; }
-    .footer-sub { font-size: 12px; fill: #8B949E; }
-    .footer-meta { font-size: 11px; fill: #6E7681; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .font-mono { font-family: 'Fira Code', 'Courier New', monospace; }
   </style>
 
   <!-- Container Box -->
-  <rect x="1" y="1" width="918" height="108" rx="12" fill="url(#footer-bg)" stroke="#30363D" stroke-width="1.2" />
+  <rect x="1" y="1" width="1198" height="88" rx="10" fill="url(#footer-bg)" stroke="#174D43" stroke-width="1.2" />
 
-  <!-- Neon Top Border Accent Line -->
-  <rect x="20" y="1" width="880" height="2" rx="1" fill="url(#accent-line)" />
+  <!-- Neon Glowing Top Edge Line -->
+  <rect x="15" y="1" width="1170" height="2" rx="1" fill="url(#neon-line)" />
 
-  <!-- Left: Signature -->
-  <circle cx="36" cy="46" r="4.5" fill="#34D399">
-    <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite" />
-  </circle>
-  <text x="50" y="50" class="font-mono footer-title">ROBINSON J. // PACKHUNTERFORCYNIC</text>
-  <text x="50" y="74" class="font-sans footer-sub">
-    Crafting high-throughput, resilient software systems &amp; intelligent edge solutions.
-  </text>
+  <!-- Left: Signature & Headline -->
+  <g transform="translate(32, 34)">
+    <circle cx="6" cy="6" r="4" fill="#39F59A">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="18" y="10" class="font-mono" font-size="13.5" font-weight="700" fill="#F4F7F6" letter-spacing="1.2">ROBINSON J. // PACKHUNTERFORCYNIC</text>
+    <text x="18" y="28" class="font-sans" font-size="11.5" fill="#9BAEAA">
+      Engineered for Scale, Low-Latency Real-Time Streaming &amp; Resilient System Architecture
+    </text>
+  </g>
 
-  <!-- Right: Verification & Meta -->
-  <g transform="translate(620, 36)">
-    <rect x="0" y="0" width="265" height="44" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.8" />
-    <text x="14" y="19" class="font-mono footer-meta">STACK: TypeScript • Python • Next.js</text>
-    <text x="14" y="34" class="font-mono" font-size="10.5" fill="#34D399">✓ VERIFIED REPOSITORY EVIDENCE</text>
+  <!-- Right: Verification & Location -->
+  <g transform="translate(930, 32)">
+    <rect x="0" y="0" width="235" height="36" rx="6" fill="#08181A" stroke="#174D43" stroke-width="0.8" />
+    <text x="14" y="16" class="font-mono" font-size="10" fill="#9BAEAA">LOCATION: Bengaluru, India</text>
+    <text x="14" y="28" class="font-mono" font-size="10" fill="#39F59A">✓ PRODUCTION DASHBOARD 2.0</text>
   </g>
 </svg>
-

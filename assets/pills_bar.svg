@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 46" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pill-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1A1D" />
+      <stop offset="100%" stop-color="#071214" />
+    </linearGradient>
+    <linearGradient id="pill-border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#174D43" />
+      <stop offset="50%" stop-color="#216D5E" />
+      <stop offset="100%" stop-color="#174D43" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .pill-font { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #F4F7F6; }
+    .accent-emerald { fill: #39F59A; }
+    .accent-cyan { fill: #20D9D2; }
+  </style>
+
+  <!-- Pill 1: Welcome -->
+  <g transform="translate(10, 3)">
+    <rect x="0" y="0" width="195" height="38" rx="8" fill="url(#pill-bg)" stroke="#174D43" stroke-width="1.2" />
+    <!-- GitHub Icon -->
+    <path d="M 22 19 C 22 14.6 25.6 11 30 11 C 34.4 11 38 14.6 38 19 C 38 22.5 35.7 25.5 32.5 26.6 C 32.1 26.7 32 26.4 32 26.2 L 32 24.8 C 29.8 25.3 29.3 23.7 29.3 23.7 C 28.9 22.8 28.4 22.5 28.4 22.5 C 27.7 22 28.5 22 28.5 22 C 29.3 22.1 29.7 22.8 29.7 22.8 C 30.4 24 31.5 23.6 32 23.4 C 32.1 22.9 32.3 22.5 32.5 22.3 C 30.7 22.1 28.8 21.4 28.8 18.3 C 28.8 17.4 29.1 16.7 29.7 16.1 C 29.6 15.9 29.3 15.1 29.8 14 C 29.8 14 30.5 13.8 32 14.9 C 32.7 14.7 33.4 14.6 34.1 14.6 C 34.8 14.6 35.5 14.7 36.2 14.9 C 37.7 13.8 38.4 14 38.4 14 C 38.9 15.1 38.6 15.9 38.5 16.1 C 39.1 16.7 39.4 17.4 39.4 18.3 C 39.4 21.4 37.5 22.1 35.7 22.3 C 36 22.6 36.2 23.1 36.2 23.8 L 36.2 26.2 C 36.2 26.4 36.1 26.7 35.7 26.6 C 32.5 25.5 30.2 22.5 30.2 19" fill="#39F59A" />
+    <text x="46" y="24" class="pill-font">Welcome to my GitHub! 👋</text>
+  </g>
+
+  <!-- Pill 2: Education / Role -->
+  <g transform="translate(215, 3)">
+    <rect x="0" y="0" width="180" height="38" rx="8" fill="url(#pill-bg)" stroke="#174D43" stroke-width="1.2" />
+    <!-- Grad Cap -->
+    <path d="M 18 19 L 28 14 L 38 19 L 28 24 Z M 38 19 L 38 23 M 23 21.5 L 23 25 C 23 26.5 25.2 27.5 28 27.5 C 30.8 27.5 33 26.5 33 25 L 33 21.5" stroke="#39F59A" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="46" y="24" class="pill-font">MCA Postgraduate</text>
+  </g>
+
+  <!-- Pill 3: Full-Stack Engineer -->
+  <g transform="translate(405, 3)">
+    <rect x="0" y="0" width="190" height="38" rx="8" fill="url(#pill-bg)" stroke="#174D43" stroke-width="1.2" />
+    <!-- Code Bracket -->
+    <text x="20" y="24" font-family="monospace" font-size="15" font-weight="bold" fill="#39F59A">&lt;/&gt;</text>
+    <text x="50" y="24" class="pill-font">Full-Stack Engineer</text>
+  </g>
+
+  <!-- Pill 4: Real-Time Systems -->
+  <g transform="translate(605, 3)">
+    <rect x="0" y="0" width="185" height="38" rx="8" fill="url(#pill-bg)" stroke="#174D43" stroke-width="1.2" />
+    <!-- Lightning Bolt / Signal -->
+    <path d="M 28 12 L 21 21 L 27 21 L 25 28 L 33 18 L 27 18 Z" fill="#20D9D2" />
+    <text x="44" y="24" class="pill-font">Real-Time Systems</text>
+  </g>
+
+  <!-- Pill 5: AI & Machine Learning -->
+  <g transform="translate(800, 3)">
+    <rect x="0" y="0" width="185" height="38" rx="8" fill="url(#pill-bg)" stroke="#174D43" stroke-width="1.2" />
+    <!-- Brain / AI Icon -->
+    <circle cx="28" cy="20" r="6" stroke="#39F59A" stroke-width="1.5" fill="none" />
+    <circle cx="25" cy="18" r="1.5" fill="#39F59A" />
+    <circle cx="31" cy="18" r="1.5" fill="#39F59A" />
+    <circle cx="28" cy="22" r="1.5" fill="#39F59A" />
+    <text x="44" y="24" class="pill-font">AI &amp; Computer Vision</text>
+  </g>
+
+  <!-- Pill 6: Creative Technologist -->
+  <g transform="translate(995, 3)">
+    <rect x="0" y="0" width="195" height="38" rx="8" fill="url(#pill-bg)" stroke="#174D43" stroke-width="1.2" />
+    <!-- Camera / Creative icon -->
+    <rect x="18" y="15" width="18" height="12" rx="2" stroke="#20D9D2" stroke-width="1.5" fill="none" />
+    <circle cx="27" cy="21" r="3" stroke="#20D9D2" stroke-width="1.2" fill="none" />
+    <text x="44" y="24" class="pill-font">Creative Technologist</text>
+  </g>
+</svg>
+

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 36" width="100%" height="100%">
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .title-text { font-size: 16px; font-weight: 700; fill: #F4F7F6; }
+    .link-text { font-size: 11.5px; font-weight: 600; fill: #39F59A; letter-spacing: 0.3px; }
+  </style>
+
+  <!-- Rocket Icon -->
+  <g transform="translate(6, 8)">
+    <path d="M 12 1 C 8 3 5 8 5 12 L 2 15 L 6 15 L 6 18 L 9 15 L 9 19 L 12 16 C 16 16 21 13 23 9 C 23 9 20 10 17 8 C 14 6 12 1 12 1 Z" fill="#39F59A" />
+    <circle cx="14" cy="9" r="2" fill="#0B1517" />
+  </g>
+
+  <!-- Title -->
+  <text x="36" y="24" class="font-sans title-text">Featured Projects</text>
+
+  <!-- Right Link -->
+  <text x="550" y="23" text-anchor="end" class="font-sans link-text">View All Repositories →</text>
+</svg>
+
