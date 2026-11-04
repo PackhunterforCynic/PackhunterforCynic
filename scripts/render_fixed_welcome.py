@@ -427,3 +427,4 @@ with open('assets/welcome_popup.svg', 'w', encoding='utf-8') as f:
     f.write(svg_content)
 
 print(f"Generated pixel-perfect assets/welcome_popup.svg, size: {os.path.getsize('assets/welcome_popup.svg')} bytes")
+

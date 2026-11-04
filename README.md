@@ -1,18 +1,18 @@
 <div align="center">
 
 <!-- ======================================================== -->
-<!-- 1. FULL-SCREEN WELCOME POP-UP (100% Matching Cyber Wolf)  -->
+<!-- 1. FULL-SCREEN WELCOME POP-UP (True Pitch Black OLED)    -->
 <!-- ======================================================== -->
 <a href="https://robinsonj.vercel.app" target="_blank" title="Click to launch Robinson's Full-Screen Interactive Workstation &amp; Portfolio">
-  <img src="assets/welcome_popup.svg?v=5.1" alt="Robinson J. (PackhunterforCynic) Cyberpunk Workstation Welcome Modal" width="100%" />
+  <img src="assets/welcome_popup.svg?v=6.0" alt="Robinson J. (PackhunterforCynic) Cyberpunk Workstation Welcome Modal" width="100%" />
 </a>
 
 <br/><br/>
 
 <!-- ======================================================== -->
-<!-- 2. QUICK ACCESS HUD DOCK (Matching Cyberpunk Navigation)  -->
+<!-- 2. QUICK ACCESS HUD DOCK (True Pitch Black OLED)         -->
 <!-- ======================================================== -->
-<img src="assets/nav_dock.svg?v=5.1" alt="Packhunter-OS Navigation Dock" width="100%" />
+<img src="assets/nav_dock.svg?v=6.0" alt="Packhunter-OS Navigation Dock" width="100%" />
 
 <br/><br/>
 
@@ -22,21 +22,21 @@
 
 <!-- Module 01 & 02: Real-Time WebSockets/WebRTC & Deterministic P2P Arena -->
 <a href="https://musica-apvs.vercel.app" target="_blank" title="Explore Musica &amp; Ben 10 Production Engines">
-  <img src="assets/showcase_musica_game.svg?v=5.1" alt="Musica Zero-DB Audio Core &amp; Ben 10 Alien Battle Arena" width="100%" />
+  <img src="assets/showcase_musica_game.svg?v=6.0" alt="Musica Zero-DB Audio Core &amp; Ben 10 Alien Battle Arena" width="100%" />
 </a>
 
 <br/><br/>
 
 <!-- Module 03 & 04: AI Vision Pathology & Computer Vision Optics -->
 <a href="https://robinsonj.vercel.app" target="_blank" title="Explore PlantSense AI &amp; CAMX Digital Camera Lab">
-  <img src="assets/showcase_ai_camx.svg?v=5.1" alt="PlantSense AI Botanical Vision &amp; CAMX Optics Simulator" width="100%" />
+  <img src="assets/showcase_ai_camx.svg?v=6.0" alt="PlantSense AI Botanical Vision &amp; CAMX Optics Simulator" width="100%" />
 </a>
 
 <br/><br/>
 
 <!-- Module 05 & 06: Cinematic Multimedia & Lighthouse 99 Production -->
 <a href="https://hse-indol.vercel.app" target="_blank" title="Explore Havilah Studio &amp; HSE Media Production Suite">
-  <img src="assets/showcase_havilah_hse.svg?v=5.1" alt="Havilah Studio Cinematic Engine &amp; HSE Media Performance Suite" width="100%" />
+  <img src="assets/showcase_havilah_hse.svg?v=6.0" alt="Havilah Studio Cinematic Engine &amp; HSE Media Performance Suite" width="100%" />
 </a>
 
 <br/><br/>
@@ -44,7 +44,7 @@
 <!-- ======================================================== -->
 <!-- 4. CORE ENGINEERING ARSENAL & SKILL MATRIX (Full Vector) -->
 <!-- ======================================================== -->
-<img src="assets/tech_arsenal.svg?v=5.1" alt="Robinson J. Core Engineering Arsenal &amp; Technical Capabilities" width="100%" />
+<img src="assets/tech_arsenal.svg?v=6.0" alt="Robinson J. Core Engineering Arsenal &amp; Technical Capabilities" width="100%" />
 
 <br/><br/>
 
@@ -65,21 +65,28 @@
 <br/><br/>
 
 <a href="https://github.com/PackhunterforCynic">
-  <img src="https://komarev.com/ghpvc/?username=PackhunterforCynic&style=for-the-badge&color=00F2FE&labelColor=061824&label=PROFILE%20TELEMETRY%20VIEWS" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=PackhunterforCynic&style=for-the-badge&color=00F2FE&labelColor=000000&label=PROFILE%20TELEMETRY%20VIEWS" alt="Profile Views" />
 </a>
 <a href="https://github.com/PackhunterforCynic">
-  <img src="https://img.shields.io/badge/System%20Status-200%20OK%20%E2%80%A2%20All%20Services%20Active-061824?style=for-the-badge&logo=statuspal&logoColor=00F2FE&labelColor=030C12" alt="System Status" />
+  <img src="https://img.shields.io/badge/System%20Status-200%20OK%20%E2%80%A2%20All%20Services%20Active-000000?style=for-the-badge&logo=statuspal&logoColor=00F2FE&labelColor=000000" alt="System Status" />
 </a>
 <a href="https://github.com/PackhunterforCynic">
-  <img src="https://img.shields.io/badge/Identity-Robinson%20J.%20(PackhunterforCynic)-061824?style=for-the-badge&logo=github&logoColor=39F59A&labelColor=030C12" alt="Identity" />
+  <img src="https://img.shields.io/badge/Identity-Robinson%20J.%20(PackhunterforCynic)-000000?style=for-the-badge&logo=github&logoColor=39F59A&labelColor=000000" alt="Identity" />
 </a>
 
 <br/><br/>
 
-<!-- Live GitHub Streak Card (Matched Cyberpunk Dark Palette) -->
+<!-- Live GitHub Streak Card (Matched True Black OLED Palette) -->
 <a href="https://github.com/PackhunterforCynic">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PackhunterforCynic&theme=dark&background=061824&stroke=12444C&ring=00F2FE&fire=00F2FE&currStreakLabel=00F2FE&sideLabels=9BAEAA&dates=9BAEAA" alt="PackhunterforCynic Live GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PackhunterforCynic&theme=dark&background=000000&stroke=22272E&ring=00F2FE&fire=00F2FE&currStreakLabel=00F2FE&sideLabels=8B949E&dates=8B949E" alt="PackhunterforCynic Live GitHub Streak" />
 </a>
+
+<br/><br/>
+
+<!-- ======================================================== -->
+<!-- 7. SECURE UPLINK FOOTER DOCK (True Pitch Black OLED)     -->
+<!-- ======================================================== -->
+<img src="assets/footer_uplink.svg?v=6.0" alt="Packhunter-OS Telemetry Uplink Footer" width="100%" />
 
 </div>
 
