@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 260" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="term-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071214" />
+      <stop offset="100%" stop-color="#04090B" />
+    </linearGradient>
+
+    <!-- Emerald Glow -->
+    <linearGradient id="glow-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#20D9D2" />
+      <stop offset="100%" stop-color="#39F59A" />
+    </linearGradient>
+
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes fadeInLine {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes progressBar {
+      0% { width: 0px; }
+      100% { width: 620px; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes pulseSuccess {
+      0% { opacity: 0; transform: scale(0.98); }
+      70% { opacity: 1; transform: scale(1.01); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .font-mono {
+      font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace;
+    }
+
+    .line-1 { animation: fadeInLine 0.4s ease forwards; animation-delay: 0.2s; opacity: 0; }
+    .line-2 { animation: fadeInLine 0.4s ease forwards; animation-delay: 0.8s; opacity: 0; }
+    .line-3 { animation: fadeInLine 0.4s ease forwards; animation-delay: 1.4s; opacity: 0; }
+    .progress-box { animation: fadeInLine 0.4s ease forwards; animation-delay: 1.8s; opacity: 0; }
+    .progress-fill { animation: progressBar 1.0s cubic-bezier(0.4, 0, 0.2, 1) forwards; animation-delay: 2.0s; }
+    .progress-pct { animation: fadeInLine 0.3s ease forwards; animation-delay: 2.9s; opacity: 0; }
+    .line-4 { animation: pulseSuccess 0.5s ease forwards; animation-delay: 3.1s; opacity: 0; }
+    .cursor { animation: blink 0.8s infinite; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="2" y="2" width="1020" height="256" rx="12" fill="url(#term-bg)" stroke="#174D43" stroke-width="1.5" />
+
+  <!-- Top Window Header Bar -->
+  <path d="M 2 14 Q 2 2 14 2 L 1010 2 Q 1022 2 1022 14 L 1022 38 L 2 38 Z" fill="#0B1E1C" />
+  <line x1="2" y1="38" x2="1022" y2="38" stroke="#174D43" stroke-width="1.2" />
+
+  <!-- Window Control Dots -->
+  <circle cx="24" cy="20" r="5.5" fill="#FF5F56" />
+  <circle cx="42" cy="20" r="5.5" fill="#FFBD2E" />
+  <circle cx="60" cy="20" r="5.5" fill="#27C93F" />
+
+  <!-- Window Title -->
+  <text x="512" y="24" text-anchor="middle" class="font-mono" font-size="11.5" fill="#9BAEAA" letter-spacing="0.5">
+    system@robinson-workstation:~ (preloader_boot.sh) — 64-bit Architecture
+  </text>
+  <rect x="890" y="11" width="112" height="18" rx="4" fill="#071816" stroke="#174D43" stroke-width="1" />
+  <text x="946" y="23" text-anchor="middle" class="font-mono" font-size="9" fill="#39F59A">● LIVE SESSION</text>
+
+  <!-- Terminal Content Lines -->
+  <!-- Line 1: Command Initiation -->
+  <g class="line-1">
+    <text x="32" y="68" class="font-mono" font-size="13" font-weight="700" fill="#39F59A">➜</text>
+    <text x="50" y="68" class="font-mono" font-size="13" font-weight="600" fill="#20D9D2">~/profile</text>
+    <text x="135" y="68" class="font-mono" font-size="13" fill="#F4F7F6">./init_developer_environment.sh --user</text>
+    <text x="445" y="68" class="font-mono" font-size="13" font-weight="700" fill="#39F59A">PackhunterforCynic</text>
+  </g>
+
+  <!-- Line 2: System Boot & Verification -->
+  <g class="line-2">
+    <text x="32" y="98" class="font-mono" font-size="12" fill="#9BAEAA">[BOOT: 0.24s]</text>
+    <text x="145" y="98" class="font-mono" font-size="12" fill="#F4F7F6">Verified Identity:</text>
+    <text x="280" y="98" class="font-mono" font-size="12" font-weight="700" fill="#39F59A">Robinson J.</text>
+    <text x="375" y="98" class="font-mono" font-size="12" fill="#9BAEAA">• MCA Computer Science '25 • Bengaluru, IN</text>
+  </g>
+
+  <!-- Line 3: Subsystem Loading -->
+  <g class="line-3">
+    <text x="32" y="128" class="font-mono" font-size="12" fill="#9BAEAA">[LOAD: 0.68s]</text>
+    <text x="145" y="128" class="font-mono" font-size="12" fill="#F4F7F6">Mounting Subsystems:</text>
+    <text x="305" y="128" class="font-mono" font-size="12" fill="#20D9D2">WebSockets/WebRTC</text>
+    <text x="450" y="128" class="font-mono" font-size="12" fill="#9BAEAA">|</text>
+    <text x="465" y="128" class="font-mono" font-size="12" fill="#39F59A">Phaser 2D Arena</text>
+    <text x="590" y="128" class="font-mono" font-size="12" fill="#9BAEAA">|</text>
+    <text x="605" y="128" class="font-mono" font-size="12" fill="#20D9D2">Gemini AI Vision</text>
+    <text x="735" y="128" class="font-mono" font-size="12" fill="#9BAEAA">|</text>
+    <text x="750" y="128" class="font-mono" font-size="12" fill="#39F59A">Lighthouse 99 Engine</text>
+  </g>
+
+  <!-- Line 4: Progress Bar Sweep -->
+  <g class="progress-box">
+    <text x="32" y="166" class="font-mono" font-size="11.5" fill="#9BAEAA">[PROGRESS]</text>
+    <!-- Track -->
+    <rect x="145" y="152" width="620" height="16" rx="4" fill="#0B1E1C" stroke="#174D43" stroke-width="1" />
+    <!-- Animated Fill -->
+    <rect class="progress-fill" x="146" y="153" width="0" height="14" rx="3" fill="url(#glow-bar)" filter="url(#neon-glow)" />
+    <!-- Percentage -->
+    <text x="780" y="165" class="font-mono progress-pct" font-size="12" font-weight="700" fill="#39F59A">100% READY</text>
+  </g>
+
+  <!-- Line 5: Access Granted Banner -->
+  <g class="line-4">
+    <rect x="32" y="194" width="956" height="42" rx="6" fill="#092B23" stroke="#39F59A" stroke-width="1.2" />
+    <circle cx="56" cy="215" r="7" fill="#39F59A" />
+    <text x="52" y="219" class="font-mono" font-size="10" font-weight="900" fill="#0B1517">✓</text>
+    <text x="76" y="220" class="font-mono" font-size="13" font-weight="800" fill="#F4F7F6">SYSTEM STATUS 200 OK — ACCESS GRANTED.</text>
+    <text x="440" y="220" class="font-mono" font-size="12.5" fill="#20D9D2">Welcome to Robinson's Engineering Dashboard</text>
+    <text x="825" y="220" class="font-mono cursor" font-size="16" font-weight="900" fill="#39F59A">_</text>
+  </g>
+</svg>
