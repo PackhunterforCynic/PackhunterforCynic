@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg-game" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161B22" />
+      <stop offset="100%" stop-color="#0E131A" />
+    </linearGradient>
+    <linearGradient id="accent-game" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+  </defs>
+  <style>
+    .font-mono { font-family: 'Fira Code', 'JetBrains Mono', Consolas, monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <rect x="1" y="1" width="428" height="198" rx="10" fill="url(#card-bg-game)" stroke="#30363D" stroke-width="1.2" />
+
+  <!-- Top Accent Bar -->
+  <path d="M 1 10 Q 1 1 10 1 L 420 1 Q 429 1 429 10 L 429 4 L 1 4 Z" fill="url(#accent-game)" />
+
+  <!-- Category & Status -->
+  <g transform="translate(18, 22)">
+    <rect x="0" y="0" width="160" height="18" rx="4" fill="#1F2937" />
+    <text x="8" y="12.5" class="font-mono" font-size="9" font-weight="700" fill="#22D3EE" letter-spacing="0.5">GAME DEV &amp; MULTIPLAYER</text>
+    
+    <g transform="translate(325, 0)">
+      <circle cx="5" cy="9" r="3" fill="#22D3EE" />
+      <text x="12" y="12.5" class="font-mono" font-size="9" fill="#8B949E">VERCEL</text>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="18" y="65" class="font-sans" font-size="19" font-weight="700" fill="#F0F6FC">Ben 10: Battle Arena</text>
+  
+  <!-- Description -->
+  <text x="18" y="88" class="font-sans" font-size="12" fill="#8B949E">
+    2D fighting arena game powered by Phaser 4,
+  </text>
+  <text x="18" y="105" class="font-sans" font-size="12" fill="#8B949E">
+    Web Audio API synthesis, and PeerJS multiplayer.
+  </text>
+
+  <!-- Architecture Highlights -->
+  <g transform="translate(18, 126)">
+    <text x="0" y="0" class="font-mono" font-size="10.5" fill="#34D399">⚡ Phaser 4 Engine • P2P PeerJS • Zustand</text>
+  </g>
+
+  <!-- Tags -->
+  <g transform="translate(18, 148)">
+    <rect x="0" y="0" width="70" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="0.8" />
+    <text x="35" y="14.5" text-anchor="middle" class="font-mono" font-size="10" fill="#C9D1D9">Phaser 4</text>
+
+    <rect x="76" y="0" width="74" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="0.8" />
+    <text x="113" y="14.5" text-anchor="middle" class="font-mono" font-size="10" fill="#C9D1D9">TypeScript</text>
+
+    <rect x="156" y="0" width="66" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="0.8" />
+    <text x="189" y="14.5" text-anchor="middle" class="font-mono" font-size="10" fill="#C9D1D9">React 19</text>
+
+    <rect x="228" y="0" width="60" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="0.8" />
+    <text x="258" y="14.5" text-anchor="middle" class="font-mono" font-size="10" fill="#C9D1D9">PeerJS</text>
+
+    <rect x="294" y="0" width="76" height="22" rx="4" fill="#21262D" stroke="#30363D" stroke-width="0.8" />
+    <text x="332" y="14.5" text-anchor="middle" class="font-mono" font-size="10" fill="#C9D1D9">Web Audio</text>
+  </g>
+
+  <!-- External Link Indicator -->
+  <g transform="translate(385, 52)" opacity="0.6">
+    <path d="M 0 10 L 10 0 M 3 0 L 10 0 L 10 7" stroke="#22D3EE" stroke-width="1.8" fill="none" stroke-linecap="round" />
+  </g>
+</svg>

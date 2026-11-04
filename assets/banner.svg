@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 270" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="50%" stop-color="#121820" />
+      <stop offset="100%" stop-color="#0A0D12" />
+    </linearGradient>
+
+    <!-- Emerald-Cyan Accent Gradient -->
+    <linearGradient id="brand-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="50%" stop-color="#2DD4BF" />
+      <stop offset="100%" stop-color="#22D3EE" />
+    </linearGradient>
+
+    <!-- Subtle Glow Gradient -->
+    <radialGradient id="glow-emerald" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glow-cyan" cx="15%" cy="85%" r="65%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Tech Tag Background -->
+    <linearGradient id="tag-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F2937" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-mono { font-family: 'Fira Code', 'JetBrains Mono', 'SF Mono', Consolas, Menlo, monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .title-text { font-size: 38px; font-weight: 800; letter-spacing: -0.5px; fill: url(#brand-grad); }
+    .prompt-text { font-size: 13px; fill: #8B949E; }
+    .prompt-cmd { font-size: 13px; fill: #34D399; font-weight: 600; }
+    .tagline-text { font-size: 15px; fill: #C9D1D9; font-weight: 400; }
+    .subtag-text { font-size: 12px; fill: #8B949E; }
+    .pill-text { font-size: 11px; font-weight: 700; letter-spacing: 0.8px; fill: #34D399; }
+    .domain-text { font-size: 11.5px; font-weight: 600; fill: #F0F6FC; letter-spacing: 1.2px; }
+  </style>
+
+  <!-- Container Box -->
+  <rect x="1" y="1" width="918" height="268" rx="14" fill="url(#bg-grad)" stroke="#30363D" stroke-width="1.5" />
+
+  <!-- Ambient Glows -->
+  <rect x="1" y="1" width="918" height="268" rx="14" fill="url(#glow-emerald)" />
+  <rect x="1" y="1" width="918" height="268" rx="14" fill="url(#glow-cyan)" />
+
+  <!-- Decorative Tech Grid (Subtle Lines) -->
+  <g opacity="0.08" stroke="#34D399" stroke-width="1">
+    <line x1="1" y1="50" x2="919" y2="50" />
+    <line x1="1" y1="100" x2="919" y2="100" />
+    <line x1="1" y1="150" x2="919" y2="150" />
+    <line x1="1" y1="200" x2="919" y2="200" />
+    <line x1="200" y1="1" x2="200" y2="269" />
+    <line x1="450" y1="1" x2="450" y2="269" />
+    <line x1="700" y1="1" x2="700" y2="269" />
+  </g>
+
+  <!-- Terminal Top Header Bar -->
+  <path d="M 1 14 Q 1 1 14 1 L 906 1 Q 919 1 919 14 L 919 38 L 1 38 Z" fill="#161B22" />
+  <line x1="1" y1="38" x2="919" y2="38" stroke="#30363D" stroke-width="1" />
+
+  <!-- Terminal Window Controls -->
+  <circle cx="24" cy="19" r="6" fill="#FF5F56" />
+  <circle cx="44" cy="19" r="6" fill="#FFBD2E" />
+  <circle cx="64" cy="19" r="6" fill="#27C93F" />
+
+  <!-- Terminal Title -->
+  <text x="460" y="24" text-anchor="middle" class="font-mono prompt-text" font-size="12">PackhunterforCynic — zsh — 920x270</text>
+
+  <!-- Live Status Chip in Header -->
+  <g transform="translate(730, 9)">
+    <rect x="0" y="0" width="168" height="21" rx="10.5" fill="#1F2937" stroke="#34D399" stroke-width="0.8" stroke-opacity="0.6" />
+    <circle cx="12" cy="10.5" r="3.5" fill="#34D399">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="22" y="14" class="font-mono pill-text">AVAILABLE FOR HIRE</text>
+  </g>
+
+  <!-- Main Content Area -->
+  <!-- Terminal Prompt Line -->
+  <text x="36" y="72" class="font-mono prompt-text">
+    <tspan fill="#34D399">developer@workstation</tspan><tspan fill="#8B949E">:</tspan><tspan fill="#22D3EE">~/portfolio</tspan><tspan fill="#8B949E"> (main) $</tspan>
+    <tspan class="prompt-cmd"> run --target=production --profile=RobinsonJ</tspan>
+  </text>
+
+  <!-- Brand Title -->
+  <text x="36" y="122" class="font-sans title-text">PackhunterforCynic</text>
+
+  <!-- Identity & Tagline -->
+  <text x="36" y="152" class="font-sans tagline-text">
+    Robinson J. <tspan fill="#8B949E">•</tspan> Software Engineer, Systems Architect &amp; Creative Technologist
+  </text>
+  <text x="36" y="176" class="font-mono subtag-text">
+    "Building at the intersection of software, data and intelligent systems."
+  </text>
+
+  <!-- Domain Capsules -->
+  <g transform="translate(36, 204)">
+    <!-- Pill 1: SOFTWARE -->
+    <rect x="0" y="0" width="160" height="34" rx="7" fill="url(#tag-bg)" stroke="#30363D" stroke-width="1" />
+    <circle cx="16" cy="17" r="4" fill="#34D399" />
+    <text x="30" y="21" class="font-mono domain-text">SOFTWARE DEV</text>
+
+    <!-- Pill 2: DATA ENGINEERING -->
+    <rect x="172" y="0" width="180" height="34" rx="7" fill="url(#tag-bg)" stroke="#30363D" stroke-width="1" />
+    <circle cx="188" cy="17" r="4" fill="#2DD4BF" />
+    <text x="202" y="21" class="font-mono domain-text">DATA ANALYTICS</text>
+
+    <!-- Pill 3: AI / MACHINE LEARNING -->
+    <rect x="364" y="0" width="175" height="34" rx="7" fill="url(#tag-bg)" stroke="#30363D" stroke-width="1" />
+    <circle cx="380" cy="17" r="4" fill="#22D3EE" />
+    <text x="394" y="21" class="font-mono domain-text">AI &amp; RAG SYSTEMS</text>
+
+    <!-- Pill 4: IoT & REAL-TIME -->
+    <rect x="551" y="0" width="185" height="34" rx="7" fill="url(#tag-bg)" stroke="#30363D" stroke-width="1" />
+    <circle cx="567" cy="17" r="4" fill="#38BDF8" />
+    <text x="581" y="21" class="font-mono domain-text">IoT &amp; STREAMING</text>
+  </g>
+
+  <!-- Accent Geometry (Right Side) -->
+  <g transform="translate(760, 68)" opacity="0.85">
+    <rect x="0" y="0" width="124" height="116" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
+    <text x="14" y="26" class="font-mono" font-size="11" fill="#8B949E">SYSTEM STATUS</text>
+    <text x="14" y="48" class="font-mono" font-size="11" fill="#34D399">● WebRTC: Live</text>
+    <text x="14" y="68" class="font-mono" font-size="11" fill="#2DD4BF">● AI Engine: Up</text>
+    <text x="14" y="88" class="font-mono" font-size="11" fill="#22D3EE">● Phaser 4: Ready</text>
+    <text x="14" y="106" class="font-mono" font-size="9" fill="#8B949E">99.98% uptime</text>
+  </g>
+</svg>
