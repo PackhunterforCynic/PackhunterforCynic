@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 490" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 540" width="100%" height="100%">
   <defs>
+    <clipPath id="avatar-clip-card">
+      <circle cx="130" cy="85" r="54" />
+    </clipPath>
     <linearGradient id="card-bg-prof" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0B1517" />
       <stop offset="100%" stop-color="#060E10" />
@@ -16,45 +19,42 @@
   </style>
 
   <!-- Container Box -->
-  <rect x="1" y="1" width="258" height="488" rx="12" fill="url(#card-bg-prof)" stroke="#174D43" stroke-width="1.2" />
+  <rect x="1" y="1" width="258" height="538" rx="12" fill="url(#card-bg-prof)" stroke="#174D43" stroke-width="1.2" />
 
-  <!-- Avatar Circle Section -->
-  <g transform="translate(130, 80)">
-    <!-- Ambient Glow -->
-    <circle cx="0" cy="0" r="62" fill="url(#ring-glow-prof)" />
-    <!-- Glowing Emerald Rings -->
-    <circle cx="0" cy="0" r="54" fill="#0A1E1A" stroke="#39F59A" stroke-width="2.5" />
-    <circle cx="0" cy="0" r="49" fill="#061210" stroke="#20D9D2" stroke-width="1" stroke-dasharray="6 3" />
-    <!-- Stylized User Silhouette if photo not rendered in vector -->
-    <circle cx="0" cy="-12" r="18" fill="#39F59A" opacity="0.9" />
-    <path d="M -30 32 C -30 10 -15 2 0 2 C 15 2 30 10 30 32 Z" fill="#39F59A" opacity="0.9" />
-  </g>
+  <!-- Avatar Section -->
+  <!-- Ambient Glow -->
+  <circle cx="130" cy="85" r="64" fill="url(#ring-glow-prof)" />
+  <!-- Double Glowing Rings -->
+  <circle cx="130" cy="85" r="59" fill="none" stroke="#39F59A" stroke-width="2.5" />
+  <circle cx="130" cy="85" r="55" fill="none" stroke="#20D9D2" stroke-width="1" stroke-dasharray="6 3" />
+  <!-- Embedded Photo -->
+  <image href="data:image/jpeg;base64,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" x="76" y="31" width="108" height="108" clip-path="url(#avatar-clip-card)" preserveAspectRatio="xMidYMid slice" />
 
   <!-- Username & Display Name -->
-  <text x="130" y="162" text-anchor="middle" class="font-sans" font-size="19" font-weight="800" fill="#F4F7F6" letter-spacing="-0.3">PackhunterforCynic</text>
-  <text x="130" y="182" text-anchor="middle" class="font-sans" font-size="13" font-weight="600" fill="#39F59A">Robinson J.</text>
+  <text x="130" y="172" text-anchor="middle" class="font-sans" font-size="19" font-weight="800" fill="#F4F7F6" letter-spacing="-0.3">PackhunterforCynic</text>
+  <text x="130" y="193" text-anchor="middle" class="font-sans" font-size="13.5" font-weight="600" fill="#39F59A">Robinson J.</text>
 
-  <!-- Headline -->
-  <text x="130" y="206" text-anchor="middle" class="font-sans" font-size="10.5" fill="#9BAEAA">Full-Stack Engineer | Real-Time</text>
-  <text x="130" y="220" text-anchor="middle" class="font-sans" font-size="10.5" fill="#9BAEAA">Software • WebRTC • AI Vision</text>
+  <!-- Professional Headline -->
+  <text x="130" y="218" text-anchor="middle" class="font-sans" font-size="10" fill="#9BAEAA">Full-Stack Engineer • Real-Time Systems</text>
+  <text x="130" y="233" text-anchor="middle" class="font-sans" font-size="10" fill="#9BAEAA">Software • WebRTC • AI Vision (MCA '25)</text>
 
-  <!-- Info Rows -->
-  <g transform="translate(24, 246)">
+  <!-- Contact Info Details -->
+  <g transform="translate(24, 262)">
     <!-- Location -->
     <g transform="translate(0, 0)">
       <path d="M 6 1 C 3.2 1 1 3.2 1 6 C 1 9.5 6 14 6 14 C 6 14 11 9.5 11 6 C 11 3.2 8.8 1 6 1 Z M 6 7.5 C 5.2 7.5 4.5 6.8 4.5 6 C 4.5 5.2 5.2 4.5 6 4.5 C 6.8 4.5 7.5 5.2 7.5 6 C 7.5 6.8 6.8 7.5 6 7.5 Z" fill="#39F59A" />
-      <text x="18" y="10" class="font-sans" font-size="11" fill="#C3D2CF">Bengaluru, India</text>
+      <text x="18" y="10" class="font-sans" font-size="11" fill="#C3D2CF">Bengaluru, Karnataka, India</text>
     </g>
 
     <!-- Email -->
-    <g transform="translate(0, 24)">
+    <g transform="translate(0, 26)">
       <rect x="0" y="1" width="12" height="9" rx="1.5" stroke="#20D9D2" stroke-width="1.2" fill="none" />
       <path d="M 1 2 L 6 6 L 11 2" stroke="#20D9D2" stroke-width="1.2" fill="none" stroke-linecap="round" />
       <text x="18" y="9.5" class="font-sans" font-size="10" fill="#39F59A">robinson30122000@gmail.com</text>
     </g>
 
-    <!-- Portfolio -->
-    <g transform="translate(0, 48)">
+    <!-- Portfolio Website -->
+    <g transform="translate(0, 52)">
       <circle cx="6" cy="6" r="5" stroke="#39F59A" stroke-width="1.2" fill="none" />
       <line x1="1" y1="6" x2="11" y2="6" stroke="#39F59A" stroke-width="0.8" />
       <ellipse cx="6" cy="6" rx="2.5" ry="5" stroke="#39F59A" stroke-width="0.8" fill="none" />
@@ -62,27 +62,26 @@
     </g>
 
     <!-- LinkedIn -->
-    <g transform="translate(0, 72)">
+    <g transform="translate(0, 78)">
       <rect x="1" y="1" width="10" height="10" rx="2" fill="#20D9D2" />
       <text x="3.5" y="9" font-family="sans-serif" font-size="8" font-weight="bold" fill="#0B1517">in</text>
       <text x="18" y="9.5" class="font-sans" font-size="10.5" fill="#C3D2CF">linkedin.com/in/robinson-mj</text>
     </g>
   </g>
 
-  <!-- Follow Button Inside Card -->
-  <g transform="translate(24, 356)">
-    <rect x="0" y="0" width="212" height="34" rx="7" fill="#0E211E" stroke="#39F59A" stroke-width="1.2" />
-    <path d="M 82 8 C 77.5 8 74 11.5 74 16 C 74 19.5 76.3 22.5 79.4 23.5 L 79.4 21.8 C 77.2 22.3 76.7 20.8 76.7 20.8 C 76.4 19.9 75.8 19.6 75.8 19.6 C 75.1 19.1 75.9 19.1 75.9 19.1 C 76.7 19.2 77.1 19.9 77.1 19.9 C 77.8 21.1 78.9 20.8 79.4 20.6 C 79.5 20.1 79.7 19.7 79.9 19.5 C 78.1 19.3 76.2 18.6 76.2 15.5 C 76.2 14.6 76.5 13.9 77.1 13.3 C 77 13.1 76.7 12.3 77.2 11.2 C 77.2 11.2 77.9 11 79.4 12 C 80.1 11.8 80.8 11.7 81.5 11.7 C 82.2 11.7 82.9 11.8 83.6 12 C 85.1 11 85.8 11.2 85.8 11.2 C 86.3 12.3 86 13.1 85.9 13.3 C 86.5 13.9 86.8 14.6 86.8 15.5 C 86.8 18.6 84.9 19.3 83.1 19.5 C 83.4 19.8 83.6 20.3 83.6 21 L 83.6 23.5 C 86.7 22.5 89 19.5 89 16 C 89 11.5 85.5 8 81 8 Z" fill="#F4F7F6" />
-    <text x="100" y="22" class="font-sans" font-size="12.5" font-weight="700" fill="#F4F7F6">Follow</text>
+  <!-- Follow Button -->
+  <g transform="translate(24, 388)">
+    <rect x="0" y="0" width="212" height="36" rx="8" fill="#0E211E" stroke="#39F59A" stroke-width="1.2" />
+    <path d="M 82 9 C 77.5 9 74 12.5 74 17 C 74 20.5 76.3 23.5 79.4 24.5 L 79.4 22.8 C 77.2 23.3 76.7 21.8 76.7 21.8 C 76.4 20.9 75.8 20.6 75.8 20.6 C 75.1 20.1 75.9 20.1 75.9 20.1 C 76.7 20.2 77.1 20.9 77.1 20.9 C 77.8 22.1 78.9 21.8 79.4 21.6 C 79.5 21.1 79.7 20.7 79.9 20.5 C 78.1 20.3 76.2 19.6 76.2 16.5 C 76.2 15.6 76.5 14.9 77.1 14.3 C 77 14.1 76.7 13.3 77.2 12.2 C 77.2 12.2 77.9 12 79.4 13 C 80.1 12.8 80.8 12.7 81.5 12.7 C 82.2 12.7 82.9 12.8 83.6 13 C 85.1 12 85.8 12.2 85.8 12.2 C 86.3 13.3 86 14.1 85.9 14.3 C 86.5 14.9 86.8 15.6 86.8 16.5 C 86.8 19.6 84.9 20.3 83.1 20.5 C 83.4 20.8 83.6 21.3 83.6 22 L 83.6 24.5 C 86.7 23.5 89 20.5 89 17 C 89 12.5 85.5 9 81 9 Z" fill="#F4F7F6" />
+    <text x="100" y="23" class="font-sans" font-size="13" font-weight="700" fill="#F4F7F6">Follow</text>
   </g>
 
-  <!-- Quote Box Inside Card -->
-  <g transform="translate(24, 404)">
-    <rect x="0" y="0" width="212" height="60" rx="7" fill="#071214" stroke="#174D43" stroke-width="0.9" />
-    <text x="10" y="24" font-family="Georgia, serif" font-size="24" fill="#39F59A" opacity="0.8">“</text>
-    <text x="106" y="27" text-anchor="middle" class="font-mono" font-style="italic" font-size="9" fill="#9BAEAA">Code · Analyze · Build · Automate</text>
-    <text x="106" y="42" text-anchor="middle" class="font-mono" font-style="italic" font-size="9.5" fill="#39F59A">Solve · Repeat</text>
-    <text x="194" y="52" font-family="Georgia, serif" font-size="24" fill="#39F59A" opacity="0.8">”</text>
+  <!-- Quote Box -->
+  <g transform="translate(24, 442)">
+    <rect x="0" y="0" width="212" height="66" rx="8" fill="#071214" stroke="#174D43" stroke-width="0.9" />
+    <text x="10" y="26" font-family="Georgia, serif" font-size="26" fill="#39F59A" opacity="0.8">“</text>
+    <text x="106" y="30" text-anchor="middle" class="font-mono" font-style="italic" font-size="9" fill="#9BAEAA">Code · Analyze · Build · Automate</text>
+    <text x="106" y="47" text-anchor="middle" class="font-mono" font-style="italic" font-size="9.5" fill="#39F59A">Solve · Repeat</text>
+    <text x="194" y="58" font-family="Georgia, serif" font-size="26" fill="#39F59A" opacity="0.8">”</text>
   </g>
 </svg>
-
