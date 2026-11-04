@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="wolf-bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0E2E28" />
+      <stop offset="60%" stop-color="#061614" />
+      <stop offset="100%" stop-color="#020808" />
+    </radialGradient>
+    <filter id="eye-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="400" height="400" rx="20" fill="url(#wolf-bg)" stroke="#174D43" stroke-width="2" />
+  
+  <!-- Cyber Radar Rings -->
+  <circle cx="200" cy="200" r="160" fill="none" stroke="#174D43" stroke-width="1" stroke-dasharray="8 8" opacity="0.6" />
+  <circle cx="200" cy="200" r="180" fill="none" stroke="#39F59A" stroke-width="1.5" stroke-dasharray="4 24" opacity="0.7" />
+
+  <polygon points="95,115 130,40 165,95" fill="#081D1A" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="130,40 135,80 165,95" fill="#0A2E28" stroke="#20D9D2" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="95,115 140,145 165,95" fill="#061614" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,75 165,95 165,140" fill="#0C2B25" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,75 165,140 200,120" fill="#0F3830" stroke="#39F59A" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,120 165,140 200,160" fill="#13473D" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="95,115 100,185 140,145" fill="#081D1A" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="140,145 100,185 145,168" fill="#0B2520" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="165,140 140,145 145,168" fill="#0E3029" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="165,140 145,168 175,175" fill="#154A3F" stroke="#39F59A" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="200,160 165,140 175,175" fill="#195B4E" stroke="#39F59A" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="100,185 85,230 145,168" fill="#071A17" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="145,168 85,230 165,210" fill="#0A2621" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="145,168 165,210 162,184" fill="#0F3830" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="175,175 162,184 165,210" fill="#164E42" stroke="#39F59A" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,160 175,175 200,205" fill="#1E6857" stroke="#39F59A" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="175,175 165,210 200,205" fill="#185648" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,205 165,210 200,245" fill="#227763" stroke="#39F59A" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="165,210 165,245 200,245" fill="#1A594B" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="85,230 115,275 165,245" fill="#081C19" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="165,245 155,275 200,280" fill="#134439" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,245 165,245 200,280" fill="#20705E" stroke="#39F59A" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="115,275 155,275 200,280" fill="#0A221E" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,280 155,275 200,325" fill="#0E2E28" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="155,275 160,325 200,325" fill="#09201C" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="85,230 75,305 115,275" fill="#051412" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="115,275 75,305 115,335" fill="#071B18" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="115,275 115,335 155,275" fill="#0B2722" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="155,275 115,335 160,325" fill="#081E1A" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="305,115 270,40 235,95" fill="#081D1A" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="270,40 265,80 235,95" fill="#0A2E28" stroke="#20D9D2" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="305,115 260,145 235,95" fill="#061614" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,75 235,95 235,140" fill="#0C2B25" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,75 235,140 200,120" fill="#0F3830" stroke="#39F59A" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,120 235,140 200,160" fill="#13473D" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="305,115 300,185 260,145" fill="#081D1A" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="260,145 300,185 255,168" fill="#0B2520" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="235,140 260,145 255,168" fill="#0E3029" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="235,140 255,168 225,175" fill="#154A3F" stroke="#39F59A" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="200,160 235,140 225,175" fill="#195B4E" stroke="#39F59A" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="300,185 315,230 255,168" fill="#071A17" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="255,168 315,230 235,210" fill="#0A2621" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="255,168 235,210 238,184" fill="#0F3830" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="225,175 238,184 235,210" fill="#164E42" stroke="#39F59A" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,160 225,175 200,205" fill="#1E6857" stroke="#39F59A" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="225,175 235,210 200,205" fill="#185648" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,205 235,210 200,245" fill="#227763" stroke="#39F59A" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="235,210 235,245 200,245" fill="#1A594B" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="315,230 285,275 235,245" fill="#081C19" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="235,245 245,275 200,280" fill="#134439" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,245 235,245 200,280" fill="#20705E" stroke="#39F59A" stroke-width="1.2" stroke-linejoin="round" />
+<polygon points="285,275 245,275 200,280" fill="#0A221E" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="200,280 245,275 200,325" fill="#0E2E28" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="245,275 240,325 200,325" fill="#09201C" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="315,230 325,305 285,275" fill="#051412" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="285,275 325,305 285,335" fill="#071B18" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+<polygon points="285,275 285,335 245,275" fill="#0B2722" stroke="#20D9D2" stroke-width="1" stroke-linejoin="round" />
+<polygon points="245,275 285,335 240,325" fill="#081E1A" stroke="#174D43" stroke-width="1" stroke-linejoin="round" />
+
+    <!-- Cyber Wolf Neon Laser Eyes -->
+    <g filter="url(#eye-glow)">
+      <!-- Left Eye -->
+      <polygon points="175,175 145,168 162,184" fill="#39F59A" stroke="#20D9D2" stroke-width="1.5" />
+      <circle cx="160" cy="176" r="3" fill="#FFFFFF" />
+      
+      <!-- Right Eye (Mirrored: 400 - x) -->
+      <polygon points="225,175 255,168 238,184" fill="#39F59A" stroke="#20D9D2" stroke-width="1.5" />
+      <circle cx="240" cy="176" r="3" fill="#FFFFFF" />
+    </g>
+    
+    <!-- Nose bridge neon centerline highlight -->
+    <line x1="200" y1="160" x2="200" y2="245" stroke="#39F59A" stroke-width="2" filter="url(#eye-glow)" />
+    <!-- Forehead cyber diamond crest -->
+    <polygon points="200,95 210,120 200,145 190,120" fill="#20D9D2" stroke="#39F59A" stroke-width="1.5" filter="url(#eye-glow)" />
+    
+</svg>

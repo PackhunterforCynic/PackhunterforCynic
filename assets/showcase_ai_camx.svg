@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 290" width="100%" height="100%">
+  <defs>
+    <linearGradient id="card-bg-ai" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081E1C" />
+      <stop offset="60%" stop-color="#051416" />
+      <stop offset="100%" stop-color="#02090B" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-mono { font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, monospace; }
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <!-- Left Card: PlantSense AI -->
+  <g transform="translate(0, 0)">
+    <rect x="2" y="2" width="536" height="284" rx="14" fill="url(#card-bg-ai)" stroke="#174D43" stroke-width="1.5" />
+    <path d="M 2 16 Q 2 2 16 2 L 522 2 Q 536 2 536 16 L 536 44 L 2 44 Z" fill="#09221F" />
+    <line x1="2" y1="44" x2="538" y2="44" stroke="#174D43" stroke-width="1.2" />
+
+    <circle cx="20" cy="23" r="4.5" fill="#39F59A" />
+    <circle cx="34" cy="23" r="4.5" fill="#20D9D2" />
+    <text x="48" y="27" class="font-mono" font-size="11" font-weight="700" fill="#9BAEAA">ENGINE 03 // VISION AI &amp; VECTOR RAG</text>
+    <rect x="420" y="13" width="102" height="20" rx="4" fill="#061F17" stroke="#39F59A" stroke-width="1" />
+    <text x="471" y="27" text-anchor="middle" class="font-mono" font-size="9.5" font-weight="800" fill="#39F59A">● FASTAPI LIVE</text>
+
+    <text x="24" y="78" class="font-sans" font-size="21" font-weight="800" fill="#F4F7F6">🌱 PlantSense Botanical AI</text>
+    <text x="24" y="98" class="font-sans" font-size="12" fill="#9BAEAA">Gemini Vision AI multimodal pathology with ChromaDB vector RAG</text>
+
+    <!-- Vector Neural Net & Vector Bounding Box -->
+    <rect x="24" y="112" width="488" height="92" rx="8" fill="#040F11" stroke="#143D36" stroke-width="1" />
+    
+    <!-- Botanical Leaf Scan Bounding Box -->
+    <rect x="40" y="124" width="70" height="68" rx="4" fill="#061A16" stroke="#39F59A" stroke-width="1.2" stroke-dasharray="4 4" />
+    <path d="M 75 132 C 60 145 60 170 75 182 C 90 170 90 145 75 132 Z" fill="#0E332B" stroke="#39F59A" stroke-width="1.5" />
+    <line x1="75" y1="135" x2="75" y2="180" stroke="#20D9D2" stroke-width="1.2" />
+    <text x="75" y="198" text-anchor="middle" class="font-mono" font-size="8" fill="#39F59A">99.4% CONF</text>
+
+    <!-- Arrow to Neural Net -->
+    <line x1="116" y1="158" x2="148" y2="158" stroke="#20D9D2" stroke-width="2" marker-end="url(#arrow)" />
+
+    <!-- Neural Synapse Nodes -->
+    <g transform="translate(156, 126)">
+      <!-- Input layer -->
+      <circle cx="10" cy="14" r="5" fill="#39F59A" />
+      <circle cx="10" cy="34" r="5" fill="#39F59A" />
+      <circle cx="10" cy="54" r="5" fill="#39F59A" />
+      <!-- Hidden layer -->
+      <circle cx="50" cy="24" r="6" fill="#20D9D2" />
+      <circle cx="50" cy="44" r="6" fill="#20D9D2" />
+      <!-- Output layer -->
+      <circle cx="90" cy="34" r="7" fill="#39F59A" />
+
+      <!-- Synapse Lines -->
+      <line x1="10" y1="14" x2="50" y2="24" stroke="#174D43" stroke-width="1" />
+      <line x1="10" y1="34" x2="50" y2="24" stroke="#174D43" stroke-width="1" />
+      <line x1="10" y1="34" x2="50" y2="44" stroke="#174D43" stroke-width="1" />
+      <line x1="10" y1="54" x2="50" y2="44" stroke="#174D43" stroke-width="1" />
+      <line x1="50" y1="24" x2="90" y2="34" stroke="#39F59A" stroke-width="1.5" />
+      <line x1="50" y1="44" x2="90" y2="34" stroke="#20D9D2" stroke-width="1.5" />
+    </g>
+
+    <!-- ChromaDB Vector RAG Box -->
+    <rect x="270" y="126" width="160" height="64" rx="6" fill="#08221D" stroke="#20D9D2" stroke-width="1.2" />
+    <text x="350" y="146" text-anchor="middle" class="font-mono" font-size="10" font-weight="700" fill="#20D9D2">ChromaDB RAG</text>
+    <text x="350" y="162" text-anchor="middle" class="font-mono" font-size="8.5" fill="#9BAEAA">Cosine Distance Metric</text>
+    <text x="350" y="176" text-anchor="middle" class="font-mono" font-size="8.5" fill="#39F59A">Instant Remedy Retrieval</text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(24, 218)">
+      <rect x="0" y="0" width="70" height="24" rx="5" fill="#07221C" stroke="#174D43" stroke-width="1" />
+      <text x="35" y="16" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#39F59A">Python</text>
+
+      <rect x="78" y="0" width="76" height="24" rx="5" fill="#07221C" stroke="#174D43" stroke-width="1" />
+      <text x="116" y="16" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#20D9D2">FastAPI</text>
+
+      <rect x="162" y="0" width="86" height="24" rx="5" fill="#07221C" stroke="#174D43" stroke-width="1" />
+      <text x="205" y="16" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#39F59A">Gemini AI</text>
+
+      <rect x="256" y="0" width="94" height="24" rx="5" fill="#07221C" stroke="#174D43" stroke-width="1" />
+      <text x="303" y="16" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#20D9D2">ChromaDB</text>
+
+      <rect x="358" y="0" width="70" height="24" rx="5" fill="#07221C" stroke="#174D43" stroke-width="1" />
+      <text x="393" y="16" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#39F59A">RAG Net</text>
+
+      <rect x="436" y="0" width="76" height="24" rx="5" fill="#07221C" stroke="#174D43" stroke-width="1" />
+      <text x="474" y="16" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#20D9D2">Vision AI</text>
+    </g>
+
+    <text x="24" y="266" class="font-mono" font-size="10.5" font-weight="700" fill="#39F59A">
+      [🌱 robinsonj.vercel.app ↗]  •  [github.com/PackhunterforCynic ↗]
+    </text>
+  </g>
+
+  <!-- Right Card: CAMX Digital Camera Lab -->
+  <g transform="translate(562, 0)">
+    <rect x="2" y="2" width="534" height="284" rx="14" fill="url(#card-bg-ai)" stroke="#174D43" stroke-width="1.5" />
+    <path d="M 2 16 Q 2 2 16 2 L 520 2 Q 534 2 534 16 L 534 44 L 2 44 Z" fill="#09221F" />
+    <line x1="2" y1="44" x2="536" y2="44" stroke="#174D43" stroke-width="1.2" />
+
+    <circle cx="20" cy="23" r="4.5" fill="#39F59A" />
+    <circle cx="34" cy="23" r="4.5" fill="#20D9D2" />
+    <text x="48" y="27" class="font-mono" font-size="11" font-weight="700" fill="#9BAEAA">ENGINE 04 // OPTICS &amp; COMPUTER VISION</text>
+    <rect x="418" y="13" width="102" height="20" rx="4" fill="#061F17" stroke="#39F59A" stroke-width="1" />
+    <text x="469" y="27" text-anchor="middle" class="font-mono" font-size="9.5" font-weight="800" fill="#39F59A">● SHOWCASE</text>
+
+    <text x="24" y="78" class="font-sans" font-size="21" font-weight="800" fill="#F4F7F6">📷 CAMX Digital Camera Lab</text>
+    <text x="24" y="98" class="font-sans" font-size="12" fill="#9BAEAA">Hands-free optics simulator with EV100, landmarks, voice commands</text>
+
+    <!-- Vector Camera Aperture & Optics HUD -->
+    <rect x="24" y="112" width="486" height="92" rx="8" fill="#040F11" stroke="#143D36" stroke-width="1" />
+    
+    <!-- Vector Camera Aperture Iris (8 Blades) -->
+    <g transform="translate(80, 158)">
+      <circle cx="0" cy="0" r="32" fill="#071E1C" stroke="#174D43" stroke-width="1.5" />
+      <polygon points="0,-24 16,-12 10,10 -12,18 -22,-2" fill="#0E332B" stroke="#39F59A" stroke-width="1.2" />
+      <circle cx="0" cy="0" r="10" fill="#040A0C" stroke="#20D9D2" stroke-width="1.5" />
+      <text x="0" y="44" text-anchor="middle" class="font-mono" font-size="8.5" fill="#39F59A">f/1.8 APERTURE</text>
+    </g>
+
+    <!-- Optics Telemetry -->
+    <g transform="translate(145, 128)">
+      <text x="0" y="14" class="font-mono" font-size="9.5" font-weight="700" fill="#20D9D2">EV100 Exposure: +1.3 EV</text>
+      <text x="0" y="28" class="font-mono" font-size="9" fill="#9BAEAA">Focal Length: 50mm Equivalent</text>
+      <text x="0" y="42" class="font-mono" font-size="9" fill="#39F59A">Facial Landmarks: 468 Points 3D</text>
+      <text x="0" y="56" class="font-mono" font-size="9" fill="#9BAEAA">Voice Control: Web Speech API</text>
+    </g>
+
+    <!-- Waveform / Spectrum on Right -->
+    <g transform="translate(390, 138)">
+      <rect x="0" y="0" width="84" height="42" rx="4" fill="#08221D" stroke="#174D43" stroke-width="1" />
+      <path d="M 6 28 Q 24 6 42 22 T 78 18" fill="none" stroke="#39F59A" stroke-width="1.8" />
+      <text x="42" y="36" text-anchor="middle" class="font-mono" font-size="7.5" fill="#20D9D2">OPTICS CURVE</text>
+    </g>
+
+    <!-- Tech Badges -->
+    <g transform="translate(24, 218)">
+      <rect x="0" y="0" width="90" height="24" rx="5" fill="#07221C" stroke="#174D43" stroke-width="1" />
+      <text x="45" y="16" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#39F59A">TypeScript</text>
+
+      <rect x="98" y="0" width="80" height="24" rx="5" fill="#07221C" stroke="#174D43" stroke-width="1" />
+      <text x="138" y="16" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#20D9D2">WebRTC</text>
+
+      <rect x="186" y="0" width="96" height="24" rx="5" fill="#07221C" stroke="#174D43" stroke-width="1" />
+      <text x="234" y="16" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#39F59A">Optics Physics</text>
+
+      <rect x="290" y="0" width="86" height="24" rx="5" fill="#07221C" stroke="#174D43" stroke-width="1" />
+      <text x="333" y="16" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#20D9D2">Voice API</text>
+
+      <rect x="384" y="0" width="70" height="24" rx="5" fill="#07221C" stroke="#174D43" stroke-width="1" />
+      <text x="419" y="16" text-anchor="middle" class="font-mono" font-size="10" font-weight="600" fill="#39F59A">Vision Lab</text>
+    </g>
+
+    <text x="24" y="266" class="font-mono" font-size="10.5" font-weight="700" fill="#39F59A">
+      [📷 robinsonj.vercel.app ↗]  •  [github.com/PackhunterforCynic ↗]
+    </text>
+  </g>
+</svg>

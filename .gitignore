@@ -2,3 +2,5 @@ preview.html
 *.backup.*
 
 Cyber Wolf AI Tech Avatar.png
+__pycache__/
+*.pyc
