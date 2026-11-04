@@ -142,11 +142,13 @@ I am a **Software Engineer and Creative Technologist** with a postgraduate backg
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <img src="assets/projects/openwatch.svg" alt="OpenWatch Security" width="100%" />
+      <a href="https://github.com/PackhunterforCynic/havilah">
+        <img src="assets/projects/havilah.svg" alt="Havilah Studio" width="100%" />
+      </a>
       <br/>
-      <b>🔒 OpenWatch Security</b>
-      <p>Free, edge-based security camera system transforming any smartphone or desktop into an encrypted surveillance node. Features WebRTC P2P direct streaming and client-side motion detection.</p>
-      <code>WebRTC P2P</code> • <code>Node.js Signaling</code> • <code>Next.js</code> • <code>Motion Detection</code> • <code>Docker</code>
+      <b>🎥 Havilah Studio</b> • <a href="https://havilah-alpha.vercel.app"><b>Live Demo ↗</b></a>
+      <p>Cinematic multimedia production and film showcase platform. Engineered with Bun runtime, Vite, GSAP micro-animations, and responsive visual storytelling layouts.</p>
+      <code>TypeScript</code> • <code>Bun</code> • <code>React</code> • <code>GSAP</code> • <code>Tailwind CSS</code> • <code>Vercel</code>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/PackhunterforCynic/hse">
@@ -226,3 +228,4 @@ I am open to software engineering roles, high-impact contract engagements, and o
 <img src="assets/footer.svg" alt="PackhunterforCynic Footer" width="100%" />
 
 </div>
+
