@@ -44,13 +44,13 @@
       font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', 'Consolas', monospace;
     }
 
-    .line-1 { animation: fadeInLine 0.4s ease forwards; animation-delay: 0.2s; opacity: 0; }
-    .line-2 { animation: fadeInLine 0.4s ease forwards; animation-delay: 0.8s; opacity: 0; }
-    .line-3 { animation: fadeInLine 0.4s ease forwards; animation-delay: 1.4s; opacity: 0; }
-    .progress-box { animation: fadeInLine 0.4s ease forwards; animation-delay: 1.8s; opacity: 0; }
-    .progress-fill { animation: progressBar 1.0s cubic-bezier(0.4, 0, 0.2, 1) forwards; animation-delay: 2.0s; }
-    .progress-pct { animation: fadeInLine 0.3s ease forwards; animation-delay: 2.9s; opacity: 0; }
-    .line-4 { animation: pulseSuccess 0.5s ease forwards; animation-delay: 3.1s; opacity: 0; }
+    .line-1 { animation: fadeInLine 0.3s ease forwards; animation-delay: 0.1s; opacity: 0; }
+    .line-2 { animation: fadeInLine 0.3s ease forwards; animation-delay: 0.4s; opacity: 0; }
+    .line-3 { animation: fadeInLine 0.3s ease forwards; animation-delay: 0.7s; opacity: 0; }
+    .progress-box { animation: fadeInLine 0.3s ease forwards; animation-delay: 0.9s; opacity: 0; }
+    .progress-fill { animation: progressBar 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards; animation-delay: 1.0s; }
+    .progress-pct { animation: fadeInLine 0.3s ease forwards; animation-delay: 1.7s; opacity: 0; }
+    .line-4 { animation: pulseSuccess 0.4s ease forwards; animation-delay: 1.8s; opacity: 0; }
     .cursor { animation: blink 0.8s infinite; }
   </style>
 

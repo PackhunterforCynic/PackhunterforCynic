@@ -3,14 +3,14 @@
 <!-- ======================================================== -->
 <!-- 1. WELCOME BOOT PRELOADER (Plays on visit / page refresh) -->
 <!-- ======================================================== -->
-<img src="assets/preloader.svg" alt="Robinson J. Cyberpunk Workstation Preloader" width="100%" />
+<img src="assets/preloader.svg?v=3.1" alt="Robinson J. Cyberpunk Workstation Preloader" width="100%" />
 
 <br/><br/>
 
 <!-- ======================================================== -->
 <!-- 2. FULL RETINA DEVELOPER DASHBOARD (Reference Match 1:1) -->
 <!-- ======================================================== -->
-<img src="assets/dashboard.png" alt="PackhunterforCynic - Robinson J. Developer Dashboard" width="100%" />
+<img src="assets/dashboard.png?v=3.1" alt="PackhunterforCynic - Robinson J. Developer Dashboard" width="100%" />
 
 <br/><br/>
 
