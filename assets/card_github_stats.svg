@@ -54,7 +54,7 @@
       <circle cx="12" cy="12" r="10" fill="#0D2622" stroke="#174D43" stroke-width="0.8" />
       <!-- Folder Icon -->
       <path d="M 7 9 L 10 9 L 11.5 10.5 L 17 10.5 L 17 15 L 7 15 Z" fill="#20D9D2" />
-      <text x="32" y="11" class="font-sans stat-num">8</text>
+      <text x="32" y="11" class="font-sans stat-num">24</text>
       <text x="32" y="22" class="font-sans stat-lbl">Repositories</text>
     </g>
 
@@ -63,8 +63,8 @@
       <circle cx="12" cy="12" r="10" fill="#0D2622" stroke="#174D43" stroke-width="0.8" />
       <!-- Globe / Cloud -->
       <circle cx="12" cy="12" r="5" stroke="#39F59A" stroke-width="1.2" fill="none" />
-      <text x="32" y="11" class="font-sans stat-num">4</text>
-      <text x="32" y="22" class="font-sans stat-lbl">Live Vercel</text>
+      <text x="32" y="11" class="font-sans stat-num">6</text>
+      <text x="32" y="22" class="font-sans stat-lbl">Production</text>
     </g>
   </g>
 

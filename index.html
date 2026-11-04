@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robinson J. (PackhunterforCynic) — Cyberpunk Developer Terminal</title>
+  <meta name="description" content="Official Full-Screen Cyberpunk Workstation & Developer Portfolio of Robinson J. (PackhunterforCynic) — Full-Stack Engineer, WebRTC, AI/ML.">
+  <link rel="icon" type="image/png" href="assets/profile/wolf_popup_thumb.png">
+  <style>
+    :root {
+      --bg: #03080A;
+      --card-bg: rgba(7, 21, 23, 0.92);
+      --card-border: #174D43;
+      --neon-emerald: #39F59A;
+      --neon-cyan: #20D9D2;
+      --text-main: #F4F7F6;
+      --text-muted: #9BAEAA;
+      --font-mono: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, monospace;
+      --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    /* Background Canvas */
+    #matrix-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    /* Laser Scanner Beam */
+    .scanner-beam {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-emerald), transparent);
+      box-shadow: 0 0 15px var(--neon-emerald);
+      z-index: 2;
+      opacity: 0.7;
+      animation: scanAnim 4.5s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes scanAnim {
+      0% { top: 0%; opacity: 0; }
+      15% { opacity: 0.8; }
+      85% { opacity: 0.8; }
+      100% { top: 100%; opacity: 0; }
+    }
+
+    /* Top Control HUD */
+    .hud-controls {
+      position: fixed;
+      top: 20px;
+      right: 24px;
+      z-index: 100;
+      display: flex;
+      gap: 12px;
+    }
+
+    .hud-btn {
+      background: rgba(11, 30, 28, 0.85);
+      border: 1px solid var(--card-border);
+      color: var(--neon-emerald);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      backdrop-filter: blur(8px);
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hud-btn:hover {
+      background: var(--neon-emerald);
+      color: #03080A;
+      box-shadow: 0 0 15px rgba(57, 245, 154, 0.4);
+      transform: translateY(-2px);
+    }
+
+    /* Pop-up Modal Container */
+    .modal-wrapper {
+      position: relative;
+      z-index: 10;
+      width: 92%;
+      max-width: 1120px;
+      margin: 40px auto;
+      perspective: 1000px;
+    }
+
+    .modal-card {
+      background: var(--card-bg);
+      border: 1.5px solid var(--neon-emerald);
+      box-shadow: 0 0 35px rgba(57, 245, 154, 0.2), 0 25px 60px rgba(0, 0, 0, 0.8);
+      border-radius: 16px;
+      overflow: hidden;
+      backdrop-filter: blur(16px);
+      animation: modalPopIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      transform-origin: center center;
+    }
+
+    @keyframes modalPopIn {
+      0% {
+        transform: scale(0.7) translateY(60px);
+        opacity: 0;
+        filter: blur(10px);
+      }
+      60% {
+        transform: scale(1.02) translateY(-6px);
+        opacity: 1;
+        filter: blur(0px);
+      }
+      80% {
+        transform: scale(0.995) translateY(2px);
+      }
+      100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Modal OS Header */
+    .modal-header {
+      background: #081E1C;
+      border-bottom: 1px solid var(--card-border);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .traffic-dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .dot.red { background: #FF5F56; box-shadow: 0 0 6px #FF5F56; }
+    .dot.yellow { background: #FFBD2E; box-shadow: 0 0 6px #FFBD2E; }
+    .dot.green { background: #27C93F; box-shadow: 0 0 6px #27C93F; }
+
+    .modal-title {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge-live {
+      background: #061F17;
+      border: 1px solid var(--neon-emerald);
+      color: var(--neon-emerald);
+      font-size: 10px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .badge-live::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background: var(--neon-emerald);
+      border-radius: 50%;
+      box-shadow: 0 0 6px var(--neon-emerald);
+    }
+
+    /* Modal Body Layout */
+    .modal-body {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 28px;
+      padding: 32px;
+    }
+
+    @media (max-width: 860px) {
+      .modal-body {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
+    }
+
+    /* Left Panel: Wolf Avatar & Audio */
+    .avatar-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(4, 15, 17, 0.7);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px 16px;
+      position: relative;
+    }
+
+    .avatar-wrapper {
+      position: relative;
+      width: 190px;
+      height: 190px;
+      margin-bottom: 18px;
+    }
+
+    .avatar-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--neon-emerald);
+      box-shadow: 0 0 25px rgba(57, 245, 154, 0.4), inset 0 0 15px rgba(32, 217, 210, 0.3);
+      position: relative;
+      z-index: 2;
+    }
+
+    .sonar-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 2px dashed rgba(57, 245, 154, 0.5);
+      animation: rotateRing 18s linear infinite;
+      pointer-events: none;
+    }
+
+    @keyframes rotateRing {
+      from { transform: translate(-50%, -50%) rotate(0deg); }
+      to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    .avatar-badge {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--neon-emerald);
+      background: #081E1C;
+      border: 1px solid var(--card-border);
+      padding: 5px 12px;
+      border-radius: 12px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Audio Equalizer */
+    .audio-eq {
+      display: flex;
+      align-items: flex-end;
+      gap: 4px;
+      height: 24px;
+      margin-bottom: 10px;
+    }
+
+    .eq-bar {
+      width: 5px;
+      background: linear-gradient(180deg, var(--neon-cyan), var(--neon-emerald));
+      border-radius: 2px;
+      animation: eqDance 0.8s ease-in-out infinite alternate;
+    }
+
+    .eq-bar:nth-child(1) { height: 8px; animation-delay: 0.1s; }
+    .eq-bar:nth-child(2) { height: 18px; animation-delay: 0.3s; }
+    .eq-bar:nth-child(3) { height: 12px; animation-delay: 0.05s; }
+    .eq-bar:nth-child(4) { height: 22px; animation-delay: 0.25s; }
+    .eq-bar:nth-child(5) { height: 14px; animation-delay: 0.4s; }
+    .eq-bar:nth-child(6) { height: 20px; animation-delay: 0.15s; }
+    .eq-bar:nth-child(7) { height: 10px; animation-delay: 0.35s; }
+
+    @keyframes eqDance {
+      0% { height: 4px; }
+      100% { height: 24px; }
+    }
+
+    .audio-text {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* Right Panel: Content */
+    .content-panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .welcome-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #0A2A22;
+      border: 1px solid var(--neon-emerald);
+      color: var(--neon-emerald);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 12px;
+      width: fit-content;
+      margin-bottom: 12px;
+    }
+
+    .hero-title {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--text-main);
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+
+    .hero-sub {
+      font-size: 15px;
+      color: var(--neon-cyan);
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .hero-sub span {
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    /* Terminal Console */
+    .terminal-box {
+      background: #040F11;
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--text-main);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .t-prompt { color: var(--neon-emerald); font-weight: 700; }
+    .t-path { color: var(--neon-cyan); font-weight: 600; }
+    .t-cmd { color: #F4F7F6; }
+    .t-tag { color: var(--text-muted); }
+    .t-success { color: var(--neon-emerald); font-weight: 700; }
+
+    /* Chips Bar */
+    .chips-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .tech-chip {
+      background: #07221C;
+      border: 1px solid var(--card-border);
+      color: var(--neon-emerald);
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 6px;
+    }
+
+    /* Action Buttons */
+    .action-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--neon-emerald), #1DB580);
+      color: #03080A;
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      font-weight: 800;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 0 20px rgba(57, 245, 154, 0.4);
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 0 30px rgba(57, 245, 154, 0.6);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: #071E1C;
+      border: 1.5px solid var(--neon-cyan);
+      color: var(--neon-cyan);
+      font-family: var(--font-sans);
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(32, 217, 210, 0.15);
+      box-shadow: 0 0 20px rgba(32, 217, 210, 0.4);
+      transform: translateY(-2px);
+    }
+
+    /* Modal Footer */
+    .modal-footer {
+      background: #040F11;
+      border-top: 1px solid var(--card-border);
+      padding: 10px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      color: var(--text-muted);
+    }
+
+    .modal-footer a {
+      color: var(--neon-emerald);
+      text-decoration: none;
+    }
+
+    .modal-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Matrix Canvas -->
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- Laser Scanner Beam -->
+  <div class="scanner-beam"></div>
+
+  <!-- Top HUD Control Buttons -->
+  <div class="hud-controls">
+    <button class="hud-btn" id="audio-toggle" onclick="toggleAudioSynth()">
+      <span>🔊</span> AUDIO SFX: OFF
+    </button>
+    <button class="hud-btn" id="fs-toggle" onclick="toggleFullScreen()">
+      <span>⛶</span> FULLSCREEN
+    </button>
+  </div>
+
+  <!-- Modal Pop-Up Window -->
+  <div class="modal-wrapper">
+    <div class="modal-card">
+      <!-- OS Header -->
+      <div class="modal-header">
+        <div class="traffic-dots">
+          <div class="dot red"></div>
+          <div class="dot yellow"></div>
+          <div class="dot green"></div>
+        </div>
+        <div class="modal-title">
+          <span>⚡ PACKHUNTER-OS v4.2 // SECURITY PROTOCOL: AUTHENTICATED // INCOMING_VISITOR_DETECTED</span>
+        </div>
+        <div class="badge-live">200 OK LIVE</div>
+      </div>
+
+      <!-- OS Body -->
+      <div class="modal-body">
+        <!-- Left Panel -->
+        <div class="avatar-panel">
+          <div class="avatar-wrapper">
+            <div class="sonar-ring"></div>
+            <img class="avatar-img" src="assets/profile/wolf_popup_thumb.png" alt="Cyber Wolf AI Tech Avatar">
+          </div>
+          <div class="avatar-badge">⚡ CYBER WOLF AI CORE</div>
+          <div class="audio-eq">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+          <div class="audio-text">
+            <b>Musica Zero-DB Core</b><br>
+            96kHz / 24-bit Stereo • &lt;18ms Latency
+          </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="content-panel">
+          <div>
+            <div class="welcome-pill">⚡ INCOMING VISITOR DETECTED</div>
+            <h1 class="hero-title">WELCOME TO PACKHUNTER WORKSTATION</h1>
+            <div class="hero-sub">
+              Robinson J. <span>— Full-Stack Engineer &amp; System Architect</span>
+            </div>
+
+            <div class="terminal-box">
+              <div>
+                <span class="t-prompt">➜</span> <span class="t-path">~/system</span> <span class="t-cmd">./init_handshake.sh --target=visitor --mode=full_access</span>
+              </div>
+              <div>
+                <span class="t-tag">[AUTH: 0.18s]</span> Verified Identity: <span class="t-success">PackhunterforCynic (Robinson J.)</span> • MCA '25
+              </div>
+              <div>
+                <span class="t-tag">[CORE: 0.44s]</span> WebSockets/WebRTC | Phaser 4 P2P | Gemini Vision AI | Lighthouse 99
+              </div>
+              <div>
+                <span class="t-tag">[STATUS]</span> <span class="t-success">✔ 200 OK — 24 Verified Repositories &amp; 6 Production Demos Online</span>
+              </div>
+            </div>
+
+            <div class="chips-grid">
+              <span class="tech-chip">📡 WebRTC / P2P</span>
+              <span class="tech-chip">🧠 Gemini Vision AI / RAG</span>
+              <span class="tech-chip">🎮 Phaser 4 2D Engine</span>
+              <span class="tech-chip">⚡ Next.js App Router</span>
+              <span class="tech-chip">🐳 Docker Swarm</span>
+            </div>
+          </div>
+
+          <div class="action-row">
+            <a class="btn-primary" href="https://github.com/PackhunterforCynic" onclick="playBeep(600)">
+              🚀 ENTER GITHUB PROFILE ↘
+            </a>
+            <a class="btn-secondary" href="https://robinsonj.vercel.app" target="_blank" onclick="playBeep(800)">
+              🌐 OPEN LIVE PORTFOLIO ↗
+            </a>
+            <a class="btn-secondary" href="https://musica-apvs.vercel.app" target="_blank" onclick="playBeep(1000)">
+              🎧 TUNE IN TO MUSICA ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- OS Footer -->
+      <div class="modal-footer">
+        <div>
+          SECURE PROTOCOL ACTIVE • ROBINSON J. • BENGALURU, INDIA
+        </div>
+        <div>
+          <a href="https://github.com/PackhunterforCynic">PackhunterforCynic</a> • 
+          <a href="https://linkedin.com/in/robinson-mj" target="_blank">LinkedIn</a> • 
+          <a href="mailto:robinson30122000@gmail.com">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 1. Matrix Background Canvas
+    const canvas = document.getElementById('matrix-canvas');
+    const ctx = canvas.getContext('2d');
+    let w, h, cols, ypos;
+
+    function resizeCanvas() {
+      w = canvas.width = window.innerWidth;
+      h = canvas.height = window.innerHeight;
+      cols = Math.floor(w / 24);
+      ypos = Array(cols).fill(0);
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    const chars = '01ROBINSONPACKHUNTERCYNICWEBRTCFASTAPIPHASERAI';
+    function matrixLoop() {
+      ctx.fillStyle = 'rgba(3, 8, 10, 0.08)';
+      ctx.fillRect(0, 0, w, h);
+      ctx.fillStyle = '#174D43';
+      ctx.font = '12px monospace';
+
+      for (let i = 0; i < cols; i++) {
+        const text = chars.charAt(Math.floor(Math.random() * chars.length));
+        const x = i * 24;
+        const y = ypos[i];
+        if (Math.random() > 0.85) {
+          ctx.fillStyle = '#39F59A';
+        } else {
+          ctx.fillStyle = '#174D43';
+        }
+        ctx.fillText(text, x, y);
+        if (y > h + Math.random() * 10000) ypos[i] = 0;
+        else ypos[i] = y + 16;
+      }
+      requestAnimationFrame(matrixLoop);
+    }
+    requestAnimationFrame(matrixLoop);
+
+    // 2. Fullscreen Toggle
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+        document.getElementById('fs-toggle').innerHTML = '<span>⛶</span> EXIT FULLSCREEN';
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen().catch(() => {});
+          document.getElementById('fs-toggle').innerHTML = '<span>⛶</span> FULLSCREEN';
+        }
+      }
+      playBeep(900);
+    }
+
+    // 3. Web Audio API Procedural SFX Synthesizer
+    let audioCtx = null;
+    let audioEnabled = false;
+
+    function toggleAudioSynth() {
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      audioEnabled = !audioEnabled;
+      const btn = document.getElementById('audio-toggle');
+      if (audioEnabled) {
+        btn.innerHTML = '<span>🔊</span> AUDIO SFX: ON';
+        btn.style.color = '#39F59A';
+        btn.style.borderColor = '#39F59A';
+        playBootChord();
+      } else {
+        btn.innerHTML = '<span>🔇</span> AUDIO SFX: OFF';
+        btn.style.color = '#9BAEAA';
+        btn.style.borderColor = '#174D43';
+      }
+    }
+
+    function playBeep(freq = 600, duration = 0.08) {
+      if (!audioEnabled || !audioCtx) return;
+      try {
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    function playBootChord() {
+      if (!audioCtx) return;
+      [440, 554.37, 659.25, 880].forEach((freq, idx) => {
+        setTimeout(() => playBeep(freq, 0.25), idx * 70);
+      });
+    }
+
+    // Interactive 3D Card Tilt
+    const card = document.querySelector('.modal-card');
+    document.addEventListener('mousemove', (e) => {
+      const cx = window.innerWidth / 2;
+      const cy = window.innerHeight / 2;
+      const dx = (e.clientX - cx) / cx;
+      const dy = (e.clientY - cy) / cy;
+      card.style.transform = `rotateY(${dx * 3}deg) rotateX(${-dy * 3}deg)`;
+    });
+  </script>
+</body>
+</html>

@@ -1,22 +1,42 @@
 <div align="center">
 
 <!-- ======================================================== -->
-<!-- 1. WELCOME BOOT PRELOADER (Plays on visit / page refresh) -->
+<!-- 1. FULL-SCREEN WELCOME POP-UP (Animated Cyberpunk Modal) -->
 <!-- ======================================================== -->
-<img src="assets/preloader.svg?v=3.1" alt="Robinson J. Cyberpunk Workstation Preloader" width="100%" />
+<a href="https://robinsonj.vercel.app" target="_blank" title="Click to launch Robinson's Full-Screen Interactive Workstation &amp; Portfolio">
+  <img src="assets/welcome_popup.svg?v=4.0" alt="Robinson J. (PackhunterforCynic) Cyberpunk Workstation Full-Screen Welcome Modal" width="100%" />
+</a>
 
-<br/><br/>
+<br/>
+
+<!-- ======================================================== -->
+<!-- QUICK NAVIGATION HUD BAR                                 -->
+<!-- ======================================================== -->
+<p align="center">
+  <a href="#retina-developer-workstation"><img src="https://img.shields.io/badge/💻%20Workstation-0B1517?style=for-the-badge&logo=visualstudiocode&logoColor=39F59A&labelColor=050B0D" alt="Workstation" /></a>
+  <a href="#verified-demos--production-deployments"><img src="https://img.shields.io/badge/🚀%20Showcases-0B1517?style=for-the-badge&logo=rocket&logoColor=20D9D2&labelColor=050B0D" alt="Showcases" /></a>
+  <a href="#live-contribution-telemetry"><img src="https://img.shields.io/badge/📈%20Contributions-0B1517?style=for-the-badge&logo=github&logoColor=39F59A&labelColor=050B0D" alt="Contributions" /></a>
+  <a href="#creative-live-audio-station--telemetry"><img src="https://img.shields.io/badge/🎧%20Musica%20Radio-0B1517?style=for-the-badge&logo=webrtc&logoColor=20D9D2&labelColor=050B0D" alt="Radio" /></a>
+  <a href="#technical-architecture--subsystem-deep-dives"><img src="https://img.shields.io/badge/🔬%20Deep%20Dives-0B1517?style=for-the-badge&logo=codewars&logoColor=39F59A&labelColor=050B0D" alt="Deep Dives" /></a>
+  <a href="#connect--telemetry-uplink"><img src="https://img.shields.io/badge/📬%20Connect-0B1517?style=for-the-badge&logo=gmail&logoColor=20D9D2&labelColor=050B0D" alt="Connect" /></a>
+</p>
+
+<br/>
 
 <!-- ======================================================== -->
 <!-- 2. FULL RETINA DEVELOPER DASHBOARD (Reference Match 1:1) -->
 <!-- ======================================================== -->
-<img src="assets/dashboard.png?v=3.1" alt="PackhunterforCynic - Robinson J. Developer Dashboard" width="100%" />
+<a id="retina-developer-workstation"></a>
+<a href="https://robinsonj.vercel.app" target="_blank" title="Explore Robinson's Live Projects">
+  <img src="assets/dashboard.png?v=4.0" alt="PackhunterforCynic - Robinson J. Developer Dashboard" width="100%" />
+</a>
 
 <br/><br/>
 
 <!-- ======================================================== -->
 <!-- 3. LIVE GITHUB CONTRIBUTION SNAKE ANIMATION              -->
 <!-- ======================================================== -->
+<a id="live-contribution-telemetry"></a>
 <a href="https://github.com/PackhunterforCynic">
   <img src="https://raw.githubusercontent.com/PackhunterforCynic/PackhunterforCynic/output/github-contribution-grid-snake-dark.svg" alt="PackhunterforCynic Live GitHub Contribution Snake" width="100%" />
 </a>
@@ -26,6 +46,7 @@
 <!-- ======================================================== -->
 <!-- 4. CREATIVE LIVE AUDIO STATION & VISITOR TELEMETRY       -->
 <!-- ======================================================== -->
+<a id="creative-live-audio-station--telemetry"></a>
 <kbd>▶ NOW STREAMING</kbd> &nbsp; <code><b>Musica Zero-DB Audio Core</b></code> • <code>96kHz / 24-bit WebRTC Stereo</code> • <code>Latency: &lt;18ms</code> &nbsp; <a href="https://musica-apvs.vercel.app"><b>[ 🎧 Tune In Live ↗ ]</b></a>
 
 <br/><br/>
@@ -36,12 +57,24 @@
 <a href="https://github.com/PackhunterforCynic">
   <img src="https://img.shields.io/badge/System%20Status-200%20OK%20%E2%80%A2%20All%20Services%20Active-0B1517?style=for-the-badge&logo=statuspal&logoColor=39F59A&labelColor=050B0D" alt="System Status" />
 </a>
+<a href="https://github.com/PackhunterforCynic">
+  <img src="https://img.shields.io/badge/Identity-Robinson%20J.%20(PackhunterforCynic)-0B1517?style=for-the-badge&logo=github&logoColor=20D9D2&labelColor=050B0D" alt="Identity" />
+</a>
+
+<br/><br/>
+
+<!-- Real-time Verified Streak Stats (Matching Dark Emerald / Cyan Palette) -->
+<a href="https://github.com/PackhunterforCynic">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PackhunterforCynic&theme=dark&background=0B1517&stroke=174D43&ring=39F59A&fire=39F59A&currStreakLabel=39F59A&sideLabels=9BAEAA&dates=9BAEAA" alt="PackhunterforCynic Live GitHub Streak" />
+</a>
 
 </div>
 
 <br/>
 
 ---
+
+<a id="verified-demos--production-deployments"></a>
 
 ### 🚀 Verified Demos & Production Deployments
 
@@ -59,6 +92,7 @@
 <!-- ======================================================== -->
 <!-- 5. INTERACTIVE COLLAPSIBLE ARCHITECTURE DEEP DIVES       -->
 <!-- ======================================================== -->
+<a id="technical-architecture--subsystem-deep-dives"></a>
 <details>
 <summary><b>🔬 Click to expand Technical Architecture & Subsystem Deep Dives</b></summary>
 
@@ -103,6 +137,7 @@ cd game && npm install && npm run dev
 
 <br/>
 
+<a id="connect--telemetry-uplink"></a>
 <div align="center">
 
 <!-- Quick Verified Connect Badges -->
